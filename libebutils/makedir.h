@@ -33,10 +33,11 @@
 #include "config.h"
 #endif
 
+#include <sys/types.h>
 
 /*
  * Function declarations.
  */
-int make_missing_directory(const char *, int);
+int make_missing_directory(const char *, mode_t);
 
 #endif /* not MAKEDIR_H */
