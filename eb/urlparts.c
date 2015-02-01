@@ -355,20 +355,22 @@ url_parts_parse(URL_Parts *parts, const char *url)
 	 * Get host and port.
 	 * IPv6 address is enclosed in `[' and `]'.
 	 */
-	if (*hostport == '[') {
-	    right_bracket = strchr(hostport + 1, ']');
-	    if (right_bracket == NULL)
-		separator = NULL;
-	    else {
-		if (*(right_bracket + 1) == ':'
-		    || *(right_bracket + 1) == '\0') {
-		    hostport++;
-		    *right_bracket = '\0';
+	if (hostport != NULL) {
+		if (*hostport == '[') {
+		    right_bracket = strchr(hostport + 1, ']');
+		    if (right_bracket == NULL)
+			separator = NULL;
+		    else {
+			if (*(right_bracket + 1) == ':'
+			    || *(right_bracket + 1) == '\0') {
+			    hostport++;
+			    *right_bracket = '\0';
+			}
+			separator = strchr(right_bracket + 1, ':');
+		    }
+		} else {
+		    separator = strchr(hostport, ':');
 		}
-		separator = strchr(right_bracket + 1, ':');
-	    }
-	} else {
-	    separator = strchr(hostport, ':');
 	}
 
 	if (separator != NULL) {
