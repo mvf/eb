@@ -371,7 +371,7 @@ output_information(const char *book_path, int multi_flag)
 	    return_code = error_code;
 	    continue;
 	}
-	printf(_("  title: "), title);
+	fputs(_("  title: "), stdout);
 	fputs_eucjp_to_locale(title, stdout);
 	fputc('\n', stdout);
 
@@ -567,7 +567,7 @@ output_multi_information(EB_Book *book)
 	    return_code = error_code;
 	    continue;
 	}
-	printf(_("    title: "), search_title);
+	fputs(_("    title: "), stdout);
 	fputs_eucjp_to_locale(search_title, stdout);
 	fputc('\n', stdout);
 
