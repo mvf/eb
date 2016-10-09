@@ -1827,7 +1827,7 @@ zio_unzip_slice_sebxa(Zio *zio, char *out_buffer)
 {
     char in_buffer[ZIO_SEBXA_SLICE_LENGTH];
     unsigned char *in_buffer_p;
-    size_t in_read_rest;
+    ssize_t in_read_rest;
     unsigned char *out_buffer_p;
     size_t out_length;
     int compression_flags[8];
