@@ -1,3 +1,8 @@
+2016-10-09  paulownia  <paulownia@Safe-mail.net>
+
+	* eb/zio.c: Fix return value assigned to variable of wrong type.
+	Origin: https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=833085#5
+
 2015-02-01  paulownia  <paulownia@Safe-mail.net>
 
 	* ebinfo/ebinfo.c: Fix too many arguments for format string.
