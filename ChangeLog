@@ -1,3 +1,9 @@
+2021-02-23  proletarius101  <proletarius101@protonmail.com>
+
+	* config.guess, config.sub: Update config.guess, config.sub.
+	Add support for aarch64.
+	Origin: https://salsa.debian.org/debian/eb/-/merge_requests/3
+
 2016-10-09  paulownia  <paulownia@Safe-mail.net>
 
 	* eb/zio.c: Fix return value assigned to variable of wrong type.
