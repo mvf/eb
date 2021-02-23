@@ -1,3 +1,7 @@
+2021-02-23  Tatsuya Kinoshita  <tats@debian.org>
+
+	* README: Convert README to UTF-8.
+
 2021-02-23  proletarius101  <proletarius101@protonmail.com>
 
 	* config.guess, config.sub: Update config.guess, config.sub.
