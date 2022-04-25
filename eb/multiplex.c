@@ -840,7 +840,7 @@ ebnet_set_book_name(int file, const char *book_name)
     if (entry == NULL)
 	return -1;
 
-    strncpy(entry->book_name, book_name, EBNET_MAX_BOOK_NAME_LENGTH + 1);
+    strncpy(entry->book_name, book_name, EBNET_MAX_BOOK_NAME_LENGTH);
     *(entry->book_name + EBNET_MAX_BOOK_NAME_LENGTH) = '\0';
 
     return 0;
@@ -875,8 +875,8 @@ ebnet_set_file_path(int file, const char *file_path)
     if (entry == NULL)
 	return -1;
 
-    strncpy(entry->file_path, file_path, EB_MAX_RELATIVE_PATH_LENGTH + 1);
-    *(entry->file_path + EB_MAX_RELATIVE_PATH_LENGTH + 1) = '\0';
+    strncpy(entry->file_path, file_path, EB_MAX_RELATIVE_PATH_LENGTH);
+    *(entry->file_path + EB_MAX_RELATIVE_PATH_LENGTH) = '\0';
 
     return 0;
 }
