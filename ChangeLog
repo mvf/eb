@@ -1,3 +1,11 @@
+2022-04-28  Kazuhiro Ito  <kzhr@d1.dion.ne.jp>
+
+	* ebu/multiplex.c (ebnet_set_book_name): Copy less one byte.  The
+	last one byte is always overwritten.
+	(ebnet_set_file_path): Moreover fix buffer overrun.
+	cf. [edict 2733] on 2022-04-25
+	Origin: http://green.ribbon.to/~ikazuhiro/dic/files/ebu-4.5-20220425.tar.gz
+
 2022-04-28  Hiroshi Miura  <miurahr@linux.com>
 
 	* eb/bitmap.c: Fix BMP size header ret by eb_bitmap_to_bmp.
