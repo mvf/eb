@@ -1,3 +1,16 @@
+2022-04-28  Hiroshi Miura  <miurahr@linux.com>
+
+	* eb/bitmap.c: Fix BMP size header ret by eb_bitmap_to_bmp.
+	eb_bitmap_to_bmp() calcuation of data size is wrongly large.
+	For example, wide font file size will be 126 but it put 226 for BMP
+	header.  It breaks images.
+	Origin: https://github.com/eb4j/eb/commit/8292c7814e2c65d0809bb8a401c00b593aefec43
+
+2022-04-28  Tatsuya Kinoshita  <tats@debian.org>
+
+	* config.guess, config.sub:
+	Update config.* with autotools-dev 20220109.1.
+
 2021-02-23  Tatsuya Kinoshita  <tats@debian.org>
 
 	* README: Convert README to UTF-8.
