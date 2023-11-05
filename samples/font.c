@@ -27,21 +27,21 @@
  */
 
 /*
- * »ÈÍÑÊıË¡:
+ * ä½¿ç”¨æ–¹æ³•:
  *     font <book-path> <subbook-index>
- * Îã:
+ * ä¾‹:
  *     font /cdrom 0
- * ÀâÌÀ:
- *     <book-path> ¤Ç»ØÄê¤·¤¿ CD-ROM ½ñÀÒ¤«¤éÆÃÄê¤ÎÉûËÜ¤òÁª¤Ó¡¢¤½¤Î
- *     ÉûËÜ¤¬ÄêµÁ¤·¤Æ¤¤¤ëÈ¾³Ñ³°»ú (¹â¤µ 16 ¥Ô¥¯¥»¥ë) ¤ò¤¹¤Ù¤Æ¥¢¥¹¥­¡¼
- *     ¥¢¡¼¥È¤ÇÉ½¼¨¤·¤Ş¤¹¡£
+ * èª¬æ˜:
+ *     <book-path> ã§æŒ‡å®šã—ãŸ CD-ROM æ›¸ç±ã‹ã‚‰ç‰¹å®šã®å‰¯æœ¬ã‚’é¸ã³ã€ãã®
+ *     å‰¯æœ¬ãŒå®šç¾©ã—ã¦ã„ã‚‹åŠè§’å¤–å­— (é«˜ã• 16 ãƒ”ã‚¯ã‚»ãƒ«) ã‚’ã™ã¹ã¦ã‚¢ã‚¹ã‚­ãƒ¼
+ *     ã‚¢ãƒ¼ãƒˆã§è¡¨ç¤ºã—ã¾ã™ã€‚
  *
- *     ¤½¤ÎÉûËÜ¤¬¡¢¹â¤µ 16 ¥Ô¥¯¥»¥ë¤ÎÈ¾³Ñ³°»ú¤òÄêµÁ¤·¤Æ¤¤¤Ê¤¤¤È¡¢¥¨
- *     ¥é¡¼¤Ë¤Ê¤ê¤Ş¤¹¡£
+ *     ãã®å‰¯æœ¬ãŒã€é«˜ã• 16 ãƒ”ã‚¯ã‚»ãƒ«ã®åŠè§’å¤–å­—ã‚’å®šç¾©ã—ã¦ã„ãªã„ã¨ã€ã‚¨
+ *     ãƒ©ãƒ¼ã«ãªã‚Šã¾ã™ã€‚
  *
- *     <subbook-index> ¤Ë¤Ï¡¢¸¡º÷ÂĞ¾İ¤ÎÉûËÜ¤Î¥¤¥ó¥Ç¥Ã¥¯¥¹¤ò»ØÄê¤·¤Ş
- *     ¤¹¡£¥¤¥ó¥Ç¥Ã¥¯¥¹¤Ï¡¢½ñÀÒ¤ÎºÇ½é¤ÎÉûËÜ¤«¤é½ç¤Ë 0¡¢1¡¢2 ... ¤Ë
- *     ¤Ê¤ê¤Ş¤¹¡£
+ *     <subbook-index> ã«ã¯ã€æ¤œç´¢å¯¾è±¡ã®å‰¯æœ¬ã®ã‚¤ãƒ³ãƒ‡ãƒƒã‚¯ã‚¹ã‚’æŒ‡å®šã—ã¾
+ *     ã™ã€‚ã‚¤ãƒ³ãƒ‡ãƒƒã‚¯ã‚¹ã¯ã€æ›¸ç±ã®æœ€åˆã®å‰¯æœ¬ã‹ã‚‰é †ã« 0ã€1ã€2 ... ã«
+ *     ãªã‚Šã¾ã™ã€‚
  */
 #include <stdio.h>
 #include <stdlib.h>
@@ -62,18 +62,18 @@ main(int argc, char *argv[])
     unsigned char bitmap[EB_SIZE_NARROW_FONT_16];
     int i, j;
 
-    /* ¥³¥Ş¥ó¥É¹Ô°ú¿ô¤ò¥Á¥§¥Ã¥¯¡£*/
+    /* ã‚³ãƒãƒ³ãƒ‰è¡Œå¼•æ•°ã‚’ãƒã‚§ãƒƒã‚¯ã€‚*/
     if (argc != 3) {
         fprintf(stderr, "Usage: %s book-path subbook-index\n",
             argv[0]);
         exit(1);
     }
 
-    /* EB ¥é¥¤¥Ö¥é¥ê¤È `book' ¤ò½é´ü²½¡£*/
+    /* EB ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã¨ `book' ã‚’åˆæœŸåŒ–ã€‚*/
     eb_initialize_library();
     eb_initialize_book(&book);
 
-    /* ½ñÀÒ¤ò `book' ¤Ë·ë¤ÓÉÕ¤±¤ë¡£*/
+    /* æ›¸ç±ã‚’ `book' ã«çµã³ä»˜ã‘ã‚‹ã€‚*/
     error_code = eb_bind(&book, argv[1]);
     if (error_code != EB_SUCCESS) {
         fprintf(stderr, "%s: failed to bind the book, %s: %s\n",
@@ -81,7 +81,7 @@ main(int argc, char *argv[])
         goto die;
     }
 
-    /* ÉûËÜ¤Î°ìÍ÷¤ò¼èÆÀ¡£*/
+    /* å‰¯æœ¬ã®ä¸€è¦§ã‚’å–å¾—ã€‚*/
     error_code = eb_subbook_list(&book, subbook_list, &subbook_count);
     if (error_code != EB_SUCCESS) {
         fprintf(stderr, "%s: failed to get the subbbook list, %s\n",
@@ -89,10 +89,10 @@ main(int argc, char *argv[])
         goto die;
     }
 
-    /* ÉûËÜ¤Î¥¤¥ó¥Ç¥Ã¥¯¥¹¤ò¼èÆÀ¡£*/
+    /* å‰¯æœ¬ã®ã‚¤ãƒ³ãƒ‡ãƒƒã‚¯ã‚¹ã‚’å–å¾—ã€‚*/
     subbook_index = atoi(argv[2]);
 
-    /*¡Ö¸½ºß¤ÎÉûËÜ (current subbook)¡×¤òÀßÄê¡£*/
+    /*ã€Œç¾åœ¨ã®å‰¯æœ¬ (current subbook)ã€ã‚’è¨­å®šã€‚*/
     error_code = eb_set_subbook(&book, subbook_list[subbook_index]);
     if (error_code != EB_SUCCESS) {
         fprintf(stderr, "%s: failed to set the current subbook, %s\n",
@@ -100,14 +100,14 @@ main(int argc, char *argv[])
         goto die;
     }
 
-    /*¡Ö¸½ºß¤Î³°»ú¤ÎÂç¤­¤µ¡×¤òÀßÄê¡£*/
+    /*ã€Œç¾åœ¨ã®å¤–å­—ã®å¤§ãã•ã€ã‚’è¨­å®šã€‚*/
     if (eb_set_font(&book, EB_FONT_16) < 0) {
         fprintf(stderr, "%s: failed to set the font size, %s\n",
             argv[0], eb_error_message(error_code));
         goto die;
     }
 
-    /* ³°»ú¤Î³«»Ï°ÌÃÖ¤ò¼èÆÀ¡£*/
+    /* å¤–å­—ã®é–‹å§‹ä½ç½®ã‚’å–å¾—ã€‚*/
     error_code = eb_narrow_font_start(&book, &font_start);
     if (error_code != EB_SUCCESS) {
         fprintf(stderr, "%s: failed to get font information, %s\n",
@@ -117,7 +117,7 @@ main(int argc, char *argv[])
 
     i = font_start;
     for (;;) {
-        /* ³°»ú¤Î¥Ó¥Ã¥È¥Ş¥Ã¥×¥Ç¡¼¥¿¤ò¼èÆÀ¡£*/
+        /* å¤–å­—ã®ãƒ“ãƒƒãƒˆãƒãƒƒãƒ—ãƒ‡ãƒ¼ã‚¿ã‚’å–å¾—ã€‚*/
 	error_code = eb_narrow_font_character_bitmap(&book, i,
 	    (char *)bitmap);
 	if (error_code != EB_SUCCESS) {
@@ -126,7 +126,7 @@ main(int argc, char *argv[])
             goto die;
         }
 
-	/* ¥Ó¥Ã¥È¥Ş¥Ã¥×¤ò¥¢¥¹¥­¡¼¥¢¡¼¥È¤Ë¤·¤Æ½ĞÎÏ¡£*/
+	/* ãƒ“ãƒƒãƒˆãƒãƒƒãƒ—ã‚’ã‚¢ã‚¹ã‚­ãƒ¼ã‚¢ãƒ¼ãƒˆã«ã—ã¦å‡ºåŠ›ã€‚*/
 	printf("code point=%04x\n", i);
 	for (j = 0; j < 16; j++) {
 	    fputc((bitmap[j] & 0x80) ? '*' : ' ', stdout);
@@ -141,18 +141,18 @@ main(int argc, char *argv[])
 	}
 	fputs("--------\n", stdout);
 
-        /* ³°»ú¤ÎÊ¸»úÈÖ¹æ¤ò°ì¤Ä¿Ê¤á¤ë¡£*/
+        /* å¤–å­—ã®æ–‡å­—ç•ªå·ã‚’ä¸€ã¤é€²ã‚ã‚‹ã€‚*/
 	error_code = eb_forward_narrow_font_character(&book, 1, &i);
 	if (error_code != EB_SUCCESS)
 	    break;
     }
         
-    /* ½ñÀÒ¤È EB ¥é¥¤¥Ö¥é¥ê¤ÎÍøÍÑ¤ò½ªÎ»¡£*/
+    /* æ›¸ç±ã¨ EB ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã®åˆ©ç”¨ã‚’çµ‚äº†ã€‚*/
     eb_finalize_book(&book);
     eb_finalize_library();
     exit(0);
 
-    /* ¥¨¥é¡¼È¯À¸¤Ç½ªÎ»¤¹¤ë¤È¤­¤Î½èÍı¡£*/
+    /* ã‚¨ãƒ©ãƒ¼ç™ºç”Ÿã§çµ‚äº†ã™ã‚‹ã¨ãã®å‡¦ç†ã€‚*/
   die:
     eb_finalize_book(&book);
     eb_finalize_library();

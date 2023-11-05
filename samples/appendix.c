@@ -27,20 +27,20 @@
  */
 
 /*
- * »ÈÍÑÊıË¡:
+ * ä½¿ç”¨æ–¹æ³•:
  *     font <appendix-path> <subbook-index>
- * Îã:
+ * ä¾‹:
  *     font /cdrom 0
- * ÀâÌÀ:
- *     <appendix-path> ¤Ç»ØÄê¤·¤¿ appendix ¤«¤éÆÃÄê¤ÎÉûËÜ¤òÁª¤Ó¡¢¤½
- *     ¤ÎÉûËÜ¤¬ÄêµÁ¤·¤Æ¤¤¤ëÈ¾³Ñ³°»ú¤ÎÂåÂØÊ¸»úÎó¤ò¤¹¤Ù¤ÆÉ½¼¨¤·¤Ş¤¹¡£
+ * èª¬æ˜:
+ *     <appendix-path> ã§æŒ‡å®šã—ãŸ appendix ã‹ã‚‰ç‰¹å®šã®å‰¯æœ¬ã‚’é¸ã³ã€ã
+ *     ã®å‰¯æœ¬ãŒå®šç¾©ã—ã¦ã„ã‚‹åŠè§’å¤–å­—ã®ä»£æ›¿æ–‡å­—åˆ—ã‚’ã™ã¹ã¦è¡¨ç¤ºã—ã¾ã™ã€‚
  *
- *     ¤½¤Î appendix ¤¬¡¢È¾³Ñ³°»ú¤ÎÂåÂØÊ¸»úÎó¤òÄêµÁ¤·¤Æ¤¤¤Ê¤¤¤È¡¢¥¨
- *     ¥é¡¼¤Ë¤Ê¤ê¤Ş¤¹¡£
+ *     ãã® appendix ãŒã€åŠè§’å¤–å­—ã®ä»£æ›¿æ–‡å­—åˆ—ã‚’å®šç¾©ã—ã¦ã„ãªã„ã¨ã€ã‚¨
+ *     ãƒ©ãƒ¼ã«ãªã‚Šã¾ã™ã€‚
  *
- *     <subbook-index> ¤Ë¤Ï¡¢ÁàºîÂĞ¾İ¤ÎÉûËÜ¤Î¥¤¥ó¥Ç¥Ã¥¯¥¹¤ò»ØÄê¤·¤Ş
- *     ¤¹¡£¥¤¥ó¥Ç¥Ã¥¯¥¹¤Ï¡¢½ñÀÒ¤ÎºÇ½é¤ÎÉûËÜ¤«¤é½ç¤Ë 0¡¢1¡¢2 ... ¤Ë
- *     ¤Ê¤ê¤Ş¤¹¡£
+ *     <subbook-index> ã«ã¯ã€æ“ä½œå¯¾è±¡ã®å‰¯æœ¬ã®ã‚¤ãƒ³ãƒ‡ãƒƒã‚¯ã‚¹ã‚’æŒ‡å®šã—ã¾
+ *     ã™ã€‚ã‚¤ãƒ³ãƒ‡ãƒƒã‚¯ã‚¹ã¯ã€æ›¸ç±ã®æœ€åˆã®å‰¯æœ¬ã‹ã‚‰é †ã« 0ã€1ã€2 ... ã«
+ *     ãªã‚Šã¾ã™ã€‚
  */
 #include <stdio.h>
 #include <stdlib.h>
@@ -61,18 +61,18 @@ main(int argc, char *argv[])
     char text[EB_MAX_ALTERNATION_TEXT_LENGTH + 1];
     int i;
 
-    /* ¥³¥Ş¥ó¥É¹Ô°ú¿ô¤ò¥Á¥§¥Ã¥¯¡£*/
+    /* ã‚³ãƒãƒ³ãƒ‰è¡Œå¼•æ•°ã‚’ãƒã‚§ãƒƒã‚¯ã€‚*/
     if (argc != 3) {
         fprintf(stderr, "Usage: %s appendix-path subbook-index\n",
             argv[0]);
         exit(1);
     }
 
-    /* EB ¥é¥¤¥Ö¥é¥ê¤È `app' ¤ò½é´ü²½¡£*/
+    /* EB ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã¨ `app' ã‚’åˆæœŸåŒ–ã€‚*/
     eb_initialize_library();
     eb_initialize_appendix(&app);
 
-    /* appendix ¤ò `app' ¤Ë·ë¤ÓÉÕ¤±¤ë¡£*/
+    /* appendix ã‚’ `app' ã«çµã³ä»˜ã‘ã‚‹ã€‚*/
     error_code = eb_bind_appendix(&app, argv[1]);
     if (error_code != EB_SUCCESS) {
         fprintf(stderr, "%s: failed to bind the app, %s: %s\n",
@@ -80,7 +80,7 @@ main(int argc, char *argv[])
         goto die;
     }
 
-    /* ÉûËÜ¤Î°ìÍ÷¤ò¼èÆÀ¡£*/
+    /* å‰¯æœ¬ã®ä¸€è¦§ã‚’å–å¾—ã€‚*/
     error_code = eb_appendix_subbook_list(&app, subbook_list,
 	&subbook_count);
     if (error_code != EB_SUCCESS) {
@@ -89,10 +89,10 @@ main(int argc, char *argv[])
         goto die;
     }
 
-    /* ÉûËÜ¤Î¥¤¥ó¥Ç¥Ã¥¯¥¹¤ò¼èÆÀ¡£*/
+    /* å‰¯æœ¬ã®ã‚¤ãƒ³ãƒ‡ãƒƒã‚¯ã‚¹ã‚’å–å¾—ã€‚*/
     subbook_index = atoi(argv[2]);
 
-    /*¡Ö¸½ºß¤ÎÉûËÜ (current subbook)¡×¤òÀßÄê¡£*/
+    /*ã€Œç¾åœ¨ã®å‰¯æœ¬ (current subbook)ã€ã‚’è¨­å®šã€‚*/
     if (eb_set_appendix_subbook(&app, subbook_list[subbook_index])
 	< 0) {
         fprintf(stderr, "%s: failed to set the current subbook, %s\n",
@@ -100,7 +100,7 @@ main(int argc, char *argv[])
         goto die;
     }
 
-    /* ³°»ú¤Î³«»Ï°ÌÃÖ¤ò¼èÆÀ¡£*/
+    /* å¤–å­—ã®é–‹å§‹ä½ç½®ã‚’å–å¾—ã€‚*/
     error_code = eb_narrow_alt_start(&app, &alt_start);
     if (error_code != EB_SUCCESS) {
         fprintf(stderr, "%s: failed to get font information, %s\n",
@@ -110,7 +110,7 @@ main(int argc, char *argv[])
 
     i = alt_start;
     for (;;) {
-        /* ³°»ú¤ÎÂåÂØÊ¸»úÎó¤ò¼èÆÀ¡£*/
+        /* å¤–å­—ã®ä»£æ›¿æ–‡å­—åˆ—ã‚’å–å¾—ã€‚*/
 	error_code = eb_narrow_alt_character_text(&app, i, text);
 	if (error_code != EB_SUCCESS) {
             fprintf(stderr, "%s: failed to get font data, %s\n",
@@ -118,21 +118,21 @@ main(int argc, char *argv[])
             goto die;
         }
 
-	/* ¼èÆÀ¤·¤¿ÂåÂØÊ¸»úÎó¤ò½ĞÎÏ¡£*/
+	/* å–å¾—ã—ãŸä»£æ›¿æ–‡å­—åˆ—ã‚’å‡ºåŠ›ã€‚*/
 	printf("%04x: %s\n", i, text);
 
-        /* ³°»ú¤ÎÊ¸»úÈÖ¹æ¤ò°ì¤Ä¿Ê¤á¤ë¡£*/
+        /* å¤–å­—ã®æ–‡å­—ç•ªå·ã‚’ä¸€ã¤é€²ã‚ã‚‹ã€‚*/
 	error_code = eb_forward_narrow_alt_character(&app, 1, &i);
 	if (error_code != EB_SUCCESS)
 	    break;
     }
         
-    /* appendix ¤È EB ¥é¥¤¥Ö¥é¥ê¤ÎÍøÍÑ¤ò½ªÎ»¡£*/
+    /* appendix ã¨ EB ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã®åˆ©ç”¨ã‚’çµ‚äº†ã€‚*/
     eb_finalize_appendix(&app);
     eb_finalize_library();
     exit(0);
 
-    /* ¥¨¥é¡¼È¯À¸¤Ç½ªÎ»¤¹¤ë¤È¤­¤Î½èÍı¡£*/
+    /* ã‚¨ãƒ©ãƒ¼ç™ºç”Ÿã§çµ‚äº†ã™ã‚‹ã¨ãã®å‡¦ç†ã€‚*/
   die:
     eb_finalize_appendix(&app);
     eb_finalize_library();

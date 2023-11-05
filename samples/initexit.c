@@ -27,13 +27,13 @@
  */
 
 /*
- * »ÈÍÑÊıË¡:
+ * ä½¿ç”¨æ–¹æ³•:
  *     initexit
- * Îã:
+ * ä¾‹:
  *     initexit
- * ÀâÌÀ:
- *     EB ¥é¥¤¥Ö¥é¥ê¤Î½é´ü²½¡¢¸å»ÏËö¤ò¤·¤Æ¤ß¤Ş¤¹¡£
- *     ¥×¥í¥°¥é¥à¤Î³°Â¦¤«¤é¸«¤ì¤Ğ¡¢¤³¤ì¤Ï²¿¤Î°ÕÌ£¤â¤Ê¤¤Æ°ºî¤Ç¤¹¡£
+ * èª¬æ˜:
+ *     EB ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã®åˆæœŸåŒ–ã€å¾Œå§‹æœ«ã‚’ã—ã¦ã¿ã¾ã™ã€‚
+ *     ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã®å¤–å´ã‹ã‚‰è¦‹ã‚Œã°ã€ã“ã‚Œã¯ä½•ã®æ„å‘³ã‚‚ãªã„å‹•ä½œã§ã™ã€‚
  */
 #include <stdio.h>
 #include <stdlib.h>
@@ -46,7 +46,7 @@ main(int argc, char *argv[])
 {
     EB_Error_Code error_code;
 
-    /* EB ¥é¥¤¥Ö¥é¥ê¤ò½é´ü²½¡£*/
+    /* EB ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã‚’åˆæœŸåŒ–ã€‚*/
     error_code = eb_initialize_library();
     if (error_code != EB_SUCCESS) {
 	fprintf(stderr, "%s: failed to initialize EB Library, %s: %s\n",
@@ -54,7 +54,7 @@ main(int argc, char *argv[])
 	exit(1);
     }
 
-    /* EB ¥é¥¤¥Ö¥é¥ê¤ÎÍøÍÑ¤ò½ªÎ»¡£*/
+    /* EB ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã®åˆ©ç”¨ã‚’çµ‚äº†ã€‚*/
     eb_finalize_library();
     exit(0);
 }

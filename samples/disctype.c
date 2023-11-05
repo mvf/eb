@@ -27,13 +27,13 @@
  */
 
 /*
- * »ÈÍÑÊıË¡:
+ * ä½¿ç”¨æ–¹æ³•:
  *     disctype <book-path>
- * Îã:
+ * ä¾‹:
  *     disctype /cdrom
- * ÀâÌÀ:
- *     <book-path> ¤Ç»ØÄê¤µ¤ì¤¿ CD-ROM ½ñÀÒ¤Î¼ïÎà¤¬¡¢EB ¤« EPWING ¤«
- *     ¤òÄ´¤Ù¤ÆÉ½¼¨¤·¤Ş¤¹¡£
+ * èª¬æ˜:
+ *     <book-path> ã§æŒ‡å®šã•ã‚ŒãŸ CD-ROM æ›¸ç±ã®ç¨®é¡ãŒã€EB ã‹ EPWING ã‹
+ *     ã‚’èª¿ã¹ã¦è¡¨ç¤ºã—ã¾ã™ã€‚
  */
 #include <stdio.h>
 #include <stdlib.h>
@@ -48,13 +48,13 @@ main(int argc, char *argv[])
     EB_Book book;
     EB_Disc_Code disc_code;
 
-    /* ¥³¥Ş¥ó¥É¹Ô°ú¿ô¤ò¥Á¥§¥Ã¥¯¡£*/
+    /* ã‚³ãƒãƒ³ãƒ‰è¡Œå¼•æ•°ã‚’ãƒã‚§ãƒƒã‚¯ã€‚*/
     if (argc != 2) {
 	fprintf(stderr, "Usage: %s book-path\n", argv[0]);
 	exit(1);
     }
 
-    /* EB ¥é¥¤¥Ö¥é¥ê¤È `book' ¤ò½é´ü²½¡£*/
+    /* EB ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã¨ `book' ã‚’åˆæœŸåŒ–ã€‚*/
     error_code = eb_initialize_library();
     if (error_code != EB_SUCCESS) {
 	fprintf(stderr, "%s: failed to initialize EB Library, %s: %s\n",
@@ -63,7 +63,7 @@ main(int argc, char *argv[])
     }
     eb_initialize_book(&book);
 
-    /* `book' ¤ò½ñÀÒ¤Ë·ë¤ÓÉÕ¤±¤ë¡£¼ºÇÔ¤·¤¿¤é½ªÎ»¡£*/
+    /* `book' ã‚’æ›¸ç±ã«çµã³ä»˜ã‘ã‚‹ã€‚å¤±æ•—ã—ãŸã‚‰çµ‚äº†ã€‚*/
     error_code = eb_bind(&book, argv[1]);
     if (error_code != EB_SUCCESS) {
 	fprintf(stderr, "%s: failed to bind the book, %s: %s\n",
@@ -71,7 +71,7 @@ main(int argc, char *argv[])
 	goto die;
     }
 
-    /* ½ñÀÒ¤Î¼ïÎà¤òÄ´¤Ù¤ÆÉ½¼¨¡£*/
+    /* æ›¸ç±ã®ç¨®é¡ã‚’èª¿ã¹ã¦è¡¨ç¤ºã€‚*/
     error_code = eb_disc_type(&book, &disc_code);
     if (error_code != EB_SUCCESS) {
 	fprintf(stderr, "%s: failed to get disc type, %s: %s\n",
@@ -87,12 +87,12 @@ main(int argc, char *argv[])
 	fputs("unknown\n", stdout);
     }
 
-    /* ½ñÀÒ¤È EB ¥é¥¤¥Ö¥é¥ê¤ÎÍøÍÑ¤ò½ªÎ»¡£*/
+    /* æ›¸ç±ã¨ EB ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã®åˆ©ç”¨ã‚’çµ‚äº†ã€‚*/
     eb_finalize_book(&book);
     eb_finalize_library();
     exit(0);
 
-    /* ¥¨¥é¡¼È¯À¸¤Ç½ªÎ»¤¹¤ë¤È¤­¤Î½èÍı¡£*/
+    /* ã‚¨ãƒ©ãƒ¼ç™ºç”Ÿã§çµ‚äº†ã™ã‚‹ã¨ãã®å‡¦ç†ã€‚*/
   die:
     eb_finalize_book(&book);
     eb_finalize_library();

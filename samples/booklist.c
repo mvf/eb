@@ -27,13 +27,13 @@
  */
 
 /*
- * »ÈÍÑÊıË¡:
+ * ä½¿ç”¨æ–¹æ³•:
  *     booklist <remote-access-ideintifier>
- * Îã:
+ * ä¾‹:
  *     booklist ebnet://localhost
- * ÀâÌÀ:
- *     <remote-access-ideintifier> ¤Ç»ØÄê¤·¤¿ EBNET ¥µ¡¼¥Ğ¤ËÀÜÂ³¤·
- *     ¤Æ¡¢¥µ¡¼¥Ğ¤ÎÄó¶¡¤¹¤ë½ñÀÒ¡¢appendix ¤Î°ìÍ÷¤òÉ½¼¨¤·¤Ş¤¹¡£
+ * èª¬æ˜:
+ *     <remote-access-ideintifier> ã§æŒ‡å®šã—ãŸ EBNET ã‚µãƒ¼ãƒã«æ¥ç¶šã—
+ *     ã¦ã€ã‚µãƒ¼ãƒã®æä¾›ã™ã‚‹æ›¸ç±ã€appendix ã®ä¸€è¦§ã‚’è¡¨ç¤ºã—ã¾ã™ã€‚
  */
 #include <stdio.h>
 #include <stdlib.h>
@@ -51,18 +51,18 @@ main(int argc, char *argv[])
     char *name, *title;
     int i;
 
-    /* ¥³¥Ş¥ó¥É¹Ô°ú¿ô¤ò¥Á¥§¥Ã¥¯¡£*/
+    /* ã‚³ãƒãƒ³ãƒ‰è¡Œå¼•æ•°ã‚’ãƒã‚§ãƒƒã‚¯ã€‚*/
     if (argc != 2) {
         fprintf(stderr, "Usage: %s book-path remote-access-identifier\n",
             argv[0]);
         exit(1);
     }
 
-    /* EB ¥é¥¤¥Ö¥é¥ê¤È `bl' ¤ò½é´ü²½¡£*/
+    /* EB ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã¨ `bl' ã‚’åˆæœŸåŒ–ã€‚*/
     eb_initialize_library();
     eb_initialize_booklist(&bl);
 
-    /* EBNET ¥µ¡¼¥Ğ¤ò `bl' ¤Ë·ë¤ÓÉÕ¤±¤ë¡£*/
+    /* EBNET ã‚µãƒ¼ãƒã‚’ `bl' ã«çµã³ä»˜ã‘ã‚‹ã€‚*/
     error_code = eb_bind_booklist(&bl, argv[1]);
     if (error_code != EB_SUCCESS) {
         fprintf(stderr, "%s: failed to bind the EBNET server, %s: %s\n",
@@ -70,7 +70,7 @@ main(int argc, char *argv[])
         goto die;
     }
 
-    /* ¥µ¡¼¥Ğ¾å¤Î½ñÀÒ¡¢appendix ¤Î¸Ä¿ô¤ò¼èÆÀ¡£*/
+    /* ã‚µãƒ¼ãƒä¸Šã®æ›¸ç±ã€appendix ã®å€‹æ•°ã‚’å–å¾—ã€‚*/
     error_code = eb_booklist_book_count(&bl, &book_count);
     if (error_code != EB_SUCCESS) {
         fprintf(stderr, "%s: failed to get the number of books, %s\n",
@@ -79,7 +79,7 @@ main(int argc, char *argv[])
     }
 
     for (i = 0; i < book_count; i++) {
-        /* ½ñÀÒ¡¢appendix ¤ÎÌ¾¾Î¤ò¼èÆÀ¡£*/
+        /* æ›¸ç±ã€appendix ã®åç§°ã‚’å–å¾—ã€‚*/
         error_code = eb_booklist_book_name(&bl, i, &name);
 	if (error_code != EB_SUCCESS) {
             fprintf(stderr, "%s: failed to get book name #%d, %s\n",
@@ -87,7 +87,7 @@ main(int argc, char *argv[])
             goto die;
         }
 
-        /* ½ñÀÒ¡¢appendix ¤ÎÂêÌ¾¤ò¼èÆÀ¡£*/
+        /* æ›¸ç±ã€appendix ã®é¡Œåã‚’å–å¾—ã€‚*/
         error_code = eb_booklist_book_name(&bl, i, &title);
 	if (error_code != EB_SUCCESS) {
             fprintf(stderr, "%s: failed to get book title #%d, %s\n",
@@ -98,12 +98,12 @@ main(int argc, char *argv[])
         printf("%-20s  %s\n", name, title);
     }
         
-    /* `bl' ¤È EB ¥é¥¤¥Ö¥é¥ê¤ÎÍøÍÑ¤ò½ªÎ»¡£*/
+    /* `bl' ã¨ EB ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã®åˆ©ç”¨ã‚’çµ‚äº†ã€‚*/
     eb_finalize_booklist(&bl);
     eb_finalize_library();
     exit(0);
 
-    /* ¥¨¥é¡¼È¯À¸¤Ç½ªÎ»¤¹¤ë¤È¤­¤Î½èÍı¡£*/
+    /* ã‚¨ãƒ©ãƒ¼ç™ºç”Ÿã§çµ‚äº†ã™ã‚‹ã¨ãã®å‡¦ç†ã€‚*/
   die:
     eb_finalize_booklist(&bl);
     eb_finalize_library();

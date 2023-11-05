@@ -27,13 +27,13 @@
  */
 
 /*
- * »ÈÍÑÊıË¡:
+ * ä½¿ç”¨æ–¹æ³•:
  *     subbook <book-path>
- * Îã:
+ * ä¾‹:
  *     subbook /cdrom
- * ÀâÌÀ:
- *     <boook-path> ¤Ç»ØÄê¤µ¤ì CD-ROM ½ñÀÒ¤Ë´Ş¤Ş¤ì¤Æ¤¤¤ë¤¹¤Ù¤Æ¤ÎÉûËÜ¤Î
- *     ÂêÌ¾¤òÉ½¼¨¤·¤Ş¤¹¡£
+ * èª¬æ˜:
+ *     <boook-path> ã§æŒ‡å®šã•ã‚Œ CD-ROM æ›¸ç±ã«å«ã¾ã‚Œã¦ã„ã‚‹ã™ã¹ã¦ã®å‰¯æœ¬ã®
+ *     é¡Œåã‚’è¡¨ç¤ºã—ã¾ã™ã€‚
  */
 #include <stdio.h>
 #include <stdlib.h>
@@ -51,13 +51,13 @@ main(int argc, char *argv[])
     char title[EB_MAX_TITLE_LENGTH + 1];
     int i;
 
-    /* ¥³¥Ş¥ó¥É¹Ô°ú¿ô¤ò¥Á¥§¥Ã¥¯¡£*/
+    /* ã‚³ãƒãƒ³ãƒ‰è¡Œå¼•æ•°ã‚’ãƒã‚§ãƒƒã‚¯ã€‚*/
     if (argc != 2) {
 	fprintf(stderr, "Usage: %s book-path\n", argv[0]);
 	exit(1);
     }
 
-    /* EB ¥é¥¤¥Ö¥é¥ê¤È `book' ¤ò½é´ü²½¡£*/
+    /* EB ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã¨ `book' ã‚’åˆæœŸåŒ–ã€‚*/
     error_code = eb_initialize_library();
     if (error_code != EB_SUCCESS) {
 	fprintf(stderr, "%s: failed to initialize EB Library, %s: %s\n",
@@ -66,7 +66,7 @@ main(int argc, char *argv[])
     }
     eb_initialize_book(&book);
 
-    /* ½ñÀÒ¤ò `book' ¤Ë·ë¤ÓÉÕ¤±¤ë¡£*/
+    /* æ›¸ç±ã‚’ `book' ã«çµã³ä»˜ã‘ã‚‹ã€‚*/
     error_code = eb_bind(&book, argv[1]);
     if (error_code != EB_SUCCESS) {
 	fprintf(stderr, "%s: failed to bind the book, %s: %s\n",
@@ -74,7 +74,7 @@ main(int argc, char *argv[])
 	goto die;
     }
 
-    /* ÉûËÜ¤Î°ìÍ÷¤ò¼èÆÀ¡£*/
+    /* å‰¯æœ¬ã®ä¸€è¦§ã‚’å–å¾—ã€‚*/
     error_code = eb_subbook_list(&book, subbook_list, &subbook_count);
     if (error_code != EB_SUCCESS) {
 	fprintf(stderr, "%s: failed to get the subbbook list, %s\n",
@@ -82,7 +82,7 @@ main(int argc, char *argv[])
 	goto die;
     }
 
-    /* ½ñÀÒ¤Ë´Ş¤Ş¤ì¤Æ¤¤¤ëÉûËÜ¤ÎÂêÌ¾¤ò½ĞÎÏ¡£*/
+    /* æ›¸ç±ã«å«ã¾ã‚Œã¦ã„ã‚‹å‰¯æœ¬ã®é¡Œåã‚’å‡ºåŠ›ã€‚*/
     for (i = 0; i < subbook_count; i++) {
 	error_code = eb_subbook_title2(&book, subbook_list[i], title);
 	if (error_code != EB_SUCCESS) {
@@ -93,12 +93,12 @@ main(int argc, char *argv[])
 	printf("%d: %s\n", i, title);
     }
 
-    /* ½ñÀÒ¤È EB ¥é¥¤¥Ö¥é¥ê¤ÎÍøÍÑ¤ò½ªÎ»¡£*/
+    /* æ›¸ç±ã¨ EB ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã®åˆ©ç”¨ã‚’çµ‚äº†ã€‚*/
     eb_finalize_book(&book);
     eb_finalize_library();
     exit(0);
 
-    /* ¥¨¥é¡¼È¯À¸¤Ç½ªÎ»¤¹¤ë¤È¤­¤Î½èÍı¡£*/
+    /* ã‚¨ãƒ©ãƒ¼ç™ºç”Ÿã§çµ‚äº†ã™ã‚‹ã¨ãã®å‡¦ç†ã€‚*/
   die:
     eb_finalize_book(&book);
     eb_finalize_library();
