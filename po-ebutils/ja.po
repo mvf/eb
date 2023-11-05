@@ -11,126 +11,126 @@ msgstr ""
 "Last-Translator: Motoyuki Kasahara <m-kasahr@sra.co.jp>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=EUC-JP\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../libebutils/ebutils.c:107
 #, c-format
 msgid "try `%s --help' for more information\n"
-msgstr "`%s --help' ¤Ç¤è¤ê¾Ü¤·¤¤¾ğÊó¤¬ÆÀ¤é¤ì¤Ş¤¹\n"
+msgstr "`%s --help' ã§ã‚ˆã‚Šè©³ã—ã„æƒ…å ±ãŒå¾—ã‚‰ã‚Œã¾ã™\n"
 
 #: ../libebutils/ebutils.c:143
 #, c-format
 msgid "%s: too many subbooks\n"
-msgstr "%s: ÉûËÜ¤Î¿ô¤¬Â¿¤¹¤®¤Ş¤¹\n"
+msgstr "%s: å‰¯æœ¬ã®æ•°ãŒå¤šã™ãã¾ã™\n"
 
 #: ../libebutils/ebutils.c:164
 #, c-format
 msgid "%s: invalid subbook name `%s...'\n"
-msgstr "%s: `%s...' ¤È¤¤¤¦ÉûËÜ¤ÎÌ¾¾Î¤¬ÉÔÀµ¤Ç¤¹\n"
+msgstr "%s: `%s...' ã¨ã„ã†å‰¯æœ¬ã®åç§°ãŒä¸æ­£ã§ã™\n"
 
 #: ../libebutils/getopt.c:105
 #, c-format
 msgid "%s: option requires an argument -- %c\n"
-msgstr "%s: ¥ª¥×¥·¥ç¥ó¤Ë¤Ï°ú¿ô¤¬É¬Í×¤Ç¤¹ -- %c\n"
+msgstr "%s: ã‚ªãƒ—ã‚·ãƒ§ãƒ³ã«ã¯å¼•æ•°ãŒå¿…è¦ã§ã™ -- %c\n"
 
 #: ../libebutils/getopt.c:107
 #, c-format
 msgid "%s: option `%.*s' requires an argument\n"
-msgstr "%s: ¥ª¥×¥·¥ç¥ó `%.*s' ¤Ë¤Ï°ú¿ô¤¬É¬Í×¤Ç¤¹\n"
+msgstr "%s: ã‚ªãƒ—ã‚·ãƒ§ãƒ³ `%.*s' ã«ã¯å¼•æ•°ãŒå¿…è¦ã§ã™\n"
 
 #: ../libebutils/getopt.c:109
 #, c-format
 msgid "%s: option `--%.*s' is ambiguous\n"
-msgstr "%s: ¥ª¥×¥·¥ç¥ó `--%.*s' ¤ÏÛ£Ëæ¤Ç¤¹\n"
+msgstr "%s: ã‚ªãƒ—ã‚·ãƒ§ãƒ³ `--%.*s' ã¯æ›–æ˜§ã§ã™\n"
 
 #: ../libebutils/getopt.c:111
 #, c-format
 msgid "%s: option `--%.*s' doesn't allow an argument\n"
-msgstr "%s: ¥ª¥×¥·¥ç¥ó `--%.*s' ¤Ï°ú¿ô¤ò»ı¤Æ¤Ş¤»¤ó\n"
+msgstr "%s: ã‚ªãƒ—ã‚·ãƒ§ãƒ³ `--%.*s' ã¯å¼•æ•°ã‚’æŒã¦ã¾ã›ã‚“\n"
 
 #: ../libebutils/getopt.c:113
 #, c-format
 msgid "%s: illegal option -- %c\n"
-msgstr "%s: ÉÔÀµ¤Ê¥ª¥×¥·¥ç¥ó¤Ç¤¹ -- %c\n"
+msgstr "%s: ä¸æ­£ãªã‚ªãƒ—ã‚·ãƒ§ãƒ³ã§ã™ -- %c\n"
 
 #: ../libebutils/getopt.c:115
 #, c-format
 msgid "%s: invalid option -- %c\n"
-msgstr "%s: ÉÔÀµ¤Ê¥ª¥×¥·¥ç¥ó¤Ç¤¹ -- %c\n"
+msgstr "%s: ä¸æ­£ãªã‚ªãƒ—ã‚·ãƒ§ãƒ³ã§ã™ -- %c\n"
 
 #: ../libebutils/getopt.c:117
 #, c-format
 msgid "%s: unrecognized option `--%.*s'\n"
-msgstr "%s: `--%.*s' ¤ÏÌ¤ÃÎ¤Î¥ª¥×¥·¥ç¥ó¤Ç¤¹\n"
+msgstr "%s: `--%.*s' ã¯æœªçŸ¥ã®ã‚ªãƒ—ã‚·ãƒ§ãƒ³ã§ã™\n"
 
 #: ../ebfont/ebfont.c:307 ../ebfont/ebfont.c:316 ../ebrefile/ebrefile.c:221
 #: ../ebrefile/ebrefile.c:229 ../ebzip/ebzip.c:275 ../ebzip/ebzip.c:285
 #, c-format
 msgid "%s: too long output directory path\n"
-msgstr "%s: ½ĞÎÏÀè¤Î¥Ç¥£¥ì¥¯¥È¥ê¤Î¥Ñ¥¹Ì¾¤¬Ä¹¤¹¤®¤Ş¤¹\n"
+msgstr "%s: å‡ºåŠ›å…ˆã®ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªã®ãƒ‘ã‚¹åãŒé•·ã™ãã¾ã™\n"
 
 #: ../ebfont/ebfont.c:350 ../ebinfo/ebinfo.c:172 ../ebrefile/ebrefile.c:261
 #: ../ebstopcode/ebstopcode.c:257 ../ebzip/ebzip.c:371
 #, c-format
 msgid "%s: too many arguments\n"
-msgstr "%s: °ú¿ô¤¬Â¿¤¹¤®¤Ş¤¹\n"
+msgstr "%s: å¼•æ•°ãŒå¤šã™ãã¾ã™\n"
 
 #: ../ebfont/ebfont.c:398 ../ebzip/unzipbook.c:93 ../ebzip/zipbook.c:94
 #: ../ebzip/zipinfobook.c:95
 #, c-format
 msgid "%s: unknown subbook name `%s'\n"
-msgstr "%s: `%s' ¤ÏÌ¤ÃÎ¤ÎÉûËÜÌ¾¤Ç¤¹\n"
+msgstr "%s: `%s' ã¯æœªçŸ¥ã®å‰¯æœ¬åã§ã™\n"
 
 #: ../ebfont/ebfont.c:461
 #, c-format
 msgid "%s: unknown font height `%s...'\n"
-msgstr "%s: `%s...' ¤ÏÌ¤ÃÎ¤Î¹â¤µ¤Î¥Õ¥©¥ó¥È¤Ç¤¹\n"
+msgstr "%s: `%s...' ã¯æœªçŸ¥ã®é«˜ã•ã®ãƒ•ã‚©ãƒ³ãƒˆã§ã™\n"
 
 #: ../ebfont/ebfont.c:478
 #, c-format
 msgid "%s: unknown font height `%s'\n"
-msgstr "%s: `%s' ¤ÏÌ¤ÃÎ¤Î¹â¤µ¤Î¥Õ¥©¥ó¥È¤Ç¤¹\n"
+msgstr "%s: `%s' ã¯æœªçŸ¥ã®é«˜ã•ã®ãƒ•ã‚©ãƒ³ãƒˆã§ã™\n"
 
 #: ../ebfont/ebfont.c:539
 #, c-format
 msgid "%s: unknown image format name `%s...'\n"
-msgstr "%s: `%s...' ¤ÏÌ¤ÃÎ¤Î²èÁü·Á¼°Ì¾¤Ç¤¹\n"
+msgstr "%s: `%s...' ã¯æœªçŸ¥ã®ç”»åƒå½¢å¼åã§ã™\n"
 
 #: ../ebfont/ebfont.c:552
 #, c-format
 msgid "%s: unknown image format name `%s'\n"
-msgstr "%s: `%s' ¤ÏÌ¤ÃÎ¤Î²èÁü·Á¼°Ì¾¤Ç¤¹\n"
+msgstr "%s: `%s' ã¯æœªçŸ¥ã®ç”»åƒå½¢å¼åã§ã™\n"
 
 #: ../ebfont/ebfont.c:589 ../ebinfo/ebinfo.c:607 ../ebrefile/ebrefile.c:328
 #: ../ebzip/ebzip.c:522
 #, c-format
 msgid "Usage: %s [option...] [book-directory]\n"
-msgstr "»ÈÍÑË¡: %s [¥ª¥×¥·¥ç¥ó...] [½ñÀÒ¤Î¥Ç¥£¥ì¥¯¥È¥ê]\n"
+msgstr "ä½¿ç”¨æ³•: %s [ã‚ªãƒ—ã‚·ãƒ§ãƒ³...] [æ›¸ç±ã®ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒª]\n"
 
 #: ../ebfont/ebfont.c:590 ../ebinfo/ebinfo.c:609 ../ebrefile/ebrefile.c:329
 #: ../ebstopcode/ebstopcode.c:447 ../ebzip/ebzip.c:523
 #, c-format
 msgid "Options:\n"
-msgstr "¥ª¥×¥·¥ç¥ó:\n"
+msgstr "ã‚ªãƒ—ã‚·ãƒ§ãƒ³:\n"
 
 #: ../ebfont/ebfont.c:591
 #, c-format
 msgid "  -d  --debug  --verbose     degug mode\n"
-msgstr "  -d  --debug  --verbose     ¥Ç¥Ğ¥Ã¥°¥â¡¼¥É\n"
+msgstr "  -d  --debug  --verbose     ãƒ‡ãƒãƒƒã‚°ãƒ¢ãƒ¼ãƒ‰\n"
 
 #: ../ebfont/ebfont.c:592
 #, c-format
 msgid "  -f HEIGHT[,HEIGHT...]  --font-height HEIGHT[,HEIGHT...]\n"
-msgstr "  -f ¹â¤µ[,¹â¤µ...]  --font-height ¹â¤µ[,¹â¤µ...]\n"
+msgstr "  -f é«˜ã•[,é«˜ã•...]  --font-height é«˜ã•[,é«˜ã•...]\n"
 
 #: ../ebfont/ebfont.c:593
 #, c-format
 msgid ""
 "                             generate fonts with HEIGHT; 16, 24, 30 or 48\n"
 msgstr ""
-"                             ¡Ö¹â¤µ¡×¤Î¥Õ¥©¥ó¥È¤òÀ¸À®\n"
-"                             ¹â¤µ¤Ï 16, 24, 30, 48 ¤Î¤¤¤º¤ì¤«\n"
+"                             ã€Œé«˜ã•ã€ã®ãƒ•ã‚©ãƒ³ãƒˆã‚’ç”Ÿæˆ\n"
+"                             é«˜ã•ã¯ 16, 24, 30, 48 ã®ã„ãšã‚Œã‹\n"
 
 #: ../ebfont/ebfont.c:594 ../ebfont/ebfont.c:600 ../ebfont/ebfont.c:604
 #: ../ebfont/ebfont.c:612 ../ebinfo/ebinfo.c:616 ../ebrefile/ebrefile.c:333
@@ -138,59 +138,59 @@ msgstr ""
 #: ../ebzip/ebzip.c:538 ../ebzip/ebzip.c:556
 #, c-format
 msgid "                             (default: %s)\n"
-msgstr "                             (¾ÊÎ¬»ş: %s)\n"
+msgstr "                             (çœç•¥æ™‚: %s)\n"
 
 #: ../ebfont/ebfont.c:596 ../ebinfo/ebinfo.c:610 ../ebrefile/ebrefile.c:330
 #: ../ebstopcode/ebstopcode.c:450 ../ebzip/ebzip.c:526
 #, c-format
 msgid "  -h  --help                 display this help, then exit\n"
-msgstr "  -h  --help                 ¤³¤Î¥Ø¥ë¥×¤òÉ½¼¨¤·¤Æ½ªÎ»\n"
+msgstr "  -h  --help                 ã“ã®ãƒ˜ãƒ«ãƒ—ã‚’è¡¨ç¤ºã—ã¦çµ‚äº†\n"
 
 #: ../ebfont/ebfont.c:597
 #, c-format
 msgid "  -i FORMAT[,FORMAT...]  --image-format FORMAT[,FORMAT...]\n"
-msgstr "  -i ²èÁü·Á¼°[,²èÁü·Á¼°...]  --image-format ²èÁü·Á¼°[,²èÁü·Á¼°...]\n"
+msgstr "  -i ç”»åƒå½¢å¼[,ç”»åƒå½¢å¼...]  --image-format ç”»åƒå½¢å¼[,ç”»åƒå½¢å¼...]\n"
 
 #: ../ebfont/ebfont.c:598
 #, c-format
 msgid "                             generate fonts as FORMAT;\n"
-msgstr "                            ¡Ö²èÁü·Á¼°¡×¤Î¥Õ¥©¥ó¥È¤òÀ¸À®\n"
+msgstr "                            ã€Œç”»åƒå½¢å¼ã€ã®ãƒ•ã‚©ãƒ³ãƒˆã‚’ç”Ÿæˆ\n"
 
 #: ../ebfont/ebfont.c:599
 #, c-format
 msgid "                             xbm, xpm, gif, bmp or png\n"
-msgstr "                             xbm, xpm, gif, bmp, png ¤Î¤¤¤º¤ì¤«\n"
+msgstr "                             xbm, xpm, gif, bmp, png ã®ã„ãšã‚Œã‹\n"
 
 #: ../ebfont/ebfont.c:602 ../ebrefile/ebrefile.c:331 ../ebzip/ebzip.c:536
 #, c-format
 msgid "  -o DIRECTORY  --output-directory DIRECTORY\n"
-msgstr "  -o ¥Ç¥£¥ì¥¯¥È¥ê  --output-directory ¥Ç¥£¥ì¥¯¥È¥ê\n"
+msgstr "  -o ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒª  --output-directory ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒª\n"
 
 #: ../ebfont/ebfont.c:603
 #, c-format
 msgid "                             output fonts under DIRECTORY\n"
-msgstr "                             ¥Õ¥©¥ó¥È¤ò¡Ö¥Ç¥£¥ì¥¯¥È¥ê¡×¤Î²¼¤ËÀ¸À®\n"
+msgstr "                             ãƒ•ã‚©ãƒ³ãƒˆã‚’ã€Œãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªã€ã®ä¸‹ã«ç”Ÿæˆ\n"
 
 #: ../ebfont/ebfont.c:606 ../ebrefile/ebrefile.c:335 ../ebzip/ebzip.c:544
 #, c-format
 msgid "  -S SUBBOOK[,SUBBOOK...]  --subbook SUBBOOK[,SUBBOOK...]\n"
-msgstr "  -S ÉûËÜ[,ÉûËÜ...]  --subbook ÉûËÜ[,ÉûËÜ...]\n"
+msgstr "  -S å‰¯æœ¬[,å‰¯æœ¬...]  --subbook å‰¯æœ¬[,å‰¯æœ¬...]\n"
 
 #: ../ebfont/ebfont.c:607 ../ebrefile/ebrefile.c:336 ../ebzip/ebzip.c:545
 #, c-format
 msgid "                             target subbook\n"
-msgstr "                             ½èÍıÂĞ¾İ¤ÎÉûËÜ\n"
+msgstr "                             å‡¦ç†å¯¾è±¡ã®å‰¯æœ¬\n"
 
 #: ../ebfont/ebfont.c:608 ../ebrefile/ebrefile.c:337 ../ebzip/ebzip.c:546
 #, c-format
 msgid "                             (default: all subbooks)\n"
-msgstr "                             (¾ÊÎ¬»ş: ¤¹¤Ù¤Æ¤ÎÉûËÜ)\n"
+msgstr "                             (çœç•¥æ™‚: ã™ã¹ã¦ã®å‰¯æœ¬)\n"
 
 #: ../ebfont/ebfont.c:609 ../ebinfo/ebinfo.c:613 ../ebrefile/ebrefile.c:338
 #: ../ebstopcode/ebstopcode.c:458 ../ebzip/ebzip.c:549
 #, c-format
 msgid "  -v  --version              display version number, then exit\n"
-msgstr "  -v  --version              ¥Ğ¡¼¥¸¥ç¥óÈÖ¹æ¤òÉ½¼¨¤·¤Æ½ªÎ»\n"
+msgstr "  -v  --version              ãƒãƒ¼ã‚¸ãƒ§ãƒ³ç•ªå·ã‚’è¡¨ç¤ºã—ã¦çµ‚äº†\n"
 
 #: ../ebfont/ebfont.c:610 ../ebinfo/ebinfo.c:614 ../ebrefile/ebrefile.c:339
 #: ../ebstopcode/ebstopcode.c:459 ../ebzip/ebzip.c:554
@@ -200,13 +200,13 @@ msgid ""
 "Argument:\n"
 msgstr ""
 "\n"
-"°ú¿ô:\n"
+"å¼•æ•°:\n"
 
 #: ../ebfont/ebfont.c:611 ../ebinfo/ebinfo.c:615 ../ebrefile/ebrefile.c:340
 #: ../ebstopcode/ebstopcode.c:460 ../ebzip/ebzip.c:555
 #, c-format
 msgid "  book-directory             top directory of a CD-ROM book\n"
-msgstr "  ½ñÀÒ¤Î¥Ç¥£¥ì¥¯¥È¥ê         CD-ROM ½ñÀÒ¤Î¥È¥Ã¥×¥Ç¥£¥ì¥¯¥È¥ê\n"
+msgstr "  æ›¸ç±ã®ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒª         CD-ROM æ›¸ç±ã®ãƒˆãƒƒãƒ—ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒª\n"
 
 #: ../ebfont/ebfont.c:614 ../ebinfo/ebinfo.c:618 ../ebrefile/ebrefile.c:344
 #: ../ebstopcode/ebstopcode.c:463 ../ebzip/ebzip.c:568
@@ -216,7 +216,7 @@ msgid ""
 "Report bugs to %s.\n"
 msgstr ""
 "\n"
-"¥Ğ¥°¤Ï %s ¤ËÊó¹ğ¤·¤Æ²¼¤µ¤¤\n"
+"ãƒã‚°ã¯ %s ã«å ±å‘Šã—ã¦ä¸‹ã•ã„\n"
 
 #: ../ebfont/ebfont.c:1030 ../ebrefile/ebrefile.c:461
 #: ../ebrefile/ebrefile.c:477 ../ebrefile/ebrefile.c:692
@@ -224,42 +224,42 @@ msgstr ""
 #: ../ebzip/sebxa.c:69 ../ebzip/sebxa.c:211 ../ebzip/zipfile.c:218
 #, c-format
 msgid "%s: failed to open the file, %s: %s\n"
-msgstr "%s: ¥Õ¥¡¥¤¥ë¤ò³«¤±¤Ş¤»¤ó¤Ç¤·¤¿, %s: %s\n"
+msgstr "%s: ãƒ•ã‚¡ã‚¤ãƒ«ã‚’é–‹ã‘ã¾ã›ã‚“ã§ã—ãŸ, %s: %s\n"
 
 #: ../ebfont/ebfont.c:1035 ../ebfont/ebfont.c:1040 ../ebrefile/ebrefile.c:732
 #: ../ebzip/copyfile.c:209 ../ebzip/unzipfile.c:282 ../ebzip/zipfile.c:429
 #: ../ebzip/zipfile.c:503
 #, c-format
 msgid "%s: failed to write to the file, %s: %s\n"
-msgstr "%s: ¥Õ¥¡¥¤¥ë¤Ø½ñ¤­¹ş¤á¤Ş¤»¤ó¤Ç¤·¤¿, %s: %s\n"
+msgstr "%s: ãƒ•ã‚¡ã‚¤ãƒ«ã¸æ›¸ãè¾¼ã‚ã¾ã›ã‚“ã§ã—ãŸ, %s: %s\n"
 
 #: ../ebfont/ebfont.c:1053
 #, c-format
 msgid "%s: failed to close the file, %s: %s\n"
-msgstr "%s: ¥Õ¥¡¥¤¥ë¤òÊÄ¤¸¤é¤ì¤Ş¤»¤ó¤Ç¤·¤¿, %s: %s\n"
+msgstr "%s: ãƒ•ã‚¡ã‚¤ãƒ«ã‚’é–‰ã˜ã‚‰ã‚Œã¾ã›ã‚“ã§ã—ãŸ, %s: %s\n"
 
 #: ../ebinfo/ebinfo.c:235
 msgid "Name"
-msgstr "Ì¾Á°"
+msgstr "åå‰"
 
 #: ../ebinfo/ebinfo.c:235
 msgid "Title"
-msgstr "ÂêÌ¾"
+msgstr "é¡Œå"
 
 #: ../ebinfo/ebinfo.c:318
 #, c-format
 msgid "disc type: "
-msgstr "¥Ç¥£¥¹¥¯¤Î·Á¼°: "
+msgstr "ãƒ‡ã‚£ã‚¹ã‚¯ã®å½¢å¼: "
 
 #: ../ebinfo/ebinfo.c:333
 #, c-format
 msgid "character code: "
-msgstr "Ê¸»ú¥³¡¼¥É: "
+msgstr "æ–‡å­—ã‚³ãƒ¼ãƒ‰: "
 
 #: ../ebinfo/ebinfo.c:345
 #, c-format
 msgid "unknown\n"
-msgstr "Ì¤ÃÎ\n"
+msgstr "æœªçŸ¥\n"
 
 #: ../ebinfo/ebinfo.c:358
 #, c-format
@@ -267,23 +267,23 @@ msgid ""
 "the number of subbooks: %d\n"
 "\n"
 msgstr ""
-"ÉûËÜ¤Î¿ô: %d\n"
+"å‰¯æœ¬ã®æ•°: %d\n"
 "\n"
 
 #: ../ebinfo/ebinfo.c:364
 #, c-format
 msgid "subbook %d:\n"
-msgstr "ÉûËÜ  %d:\n"
+msgstr "å‰¯æœ¬  %d:\n"
 
 #: ../ebinfo/ebinfo.c:374
 #, c-format
 msgid "  title: "
-msgstr "  ÂêÌ¾: "
+msgstr "  é¡Œå: "
 
 #: ../ebinfo/ebinfo.c:386
 #, c-format
 msgid "  directory: %s\n"
-msgstr "  ¥Ç¥£¥ì¥¯¥È¥ê: %s\n"
+msgstr "  ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒª: %s\n"
 
 #.
 #. * Output supported methods.
@@ -291,53 +291,53 @@ msgstr "  ¥Ç¥£¥ì¥¯¥È¥ê: %s\n"
 #: ../ebinfo/ebinfo.c:401
 #, c-format
 msgid "  search methods: "
-msgstr "  ¸¡º÷Êı¼°: "
+msgstr "  æ¤œç´¢æ–¹å¼: "
 
 #: ../ebinfo/ebinfo.c:403
 msgid "word "
-msgstr "Á°Êı°ìÃ× "
+msgstr "å‰æ–¹ä¸€è‡´ "
 
 #: ../ebinfo/ebinfo.c:405
 msgid "endword "
-msgstr "¸åÊı°ìÃ× "
+msgstr "å¾Œæ–¹ä¸€è‡´ "
 
 #: ../ebinfo/ebinfo.c:407
 msgid "keyword "
-msgstr "¾ò·ï "
+msgstr "æ¡ä»¶ "
 
 #: ../ebinfo/ebinfo.c:409
 msgid "cross "
-msgstr "¥¯¥í¥¹ "
+msgstr "ã‚¯ãƒ­ã‚¹ "
 
 #: ../ebinfo/ebinfo.c:411
 msgid "multi "
-msgstr "Ê£¹ç "
+msgstr "è¤‡åˆ "
 
 #: ../ebinfo/ebinfo.c:413
 msgid "menu "
-msgstr "¥á¥Ë¥å¡¼ "
+msgstr "ãƒ¡ãƒ‹ãƒ¥ãƒ¼ "
 
 #: ../ebinfo/ebinfo.c:415
 msgid "image-menu "
-msgstr "²èÁü¥á¥Ë¥å¡¼ "
+msgstr "ç”»åƒãƒ¡ãƒ‹ãƒ¥ãƒ¼ "
 
 #: ../ebinfo/ebinfo.c:417
 msgid "copyright "
-msgstr "Ãøºî¸¢É½¼¨ "
+msgstr "è‘—ä½œæ¨©è¡¨ç¤º "
 
 #.
 #. * Output a font list.
 #.
 #: ../ebinfo/ebinfo.c:423
 msgid "  font sizes: "
-msgstr "  ¥Õ¥©¥ó¥È¤ÎÂç¤­¤µ: "
+msgstr "  ãƒ•ã‚©ãƒ³ãƒˆã®å¤§ãã•: "
 
 #.
 #. * Output character range of the narrow font.
 #.
 #: ../ebinfo/ebinfo.c:445
 msgid "  narrow font characters: "
-msgstr "  È¾³Ñ¥Õ¥©¥ó¥È¤ÎÊ¸»ú: "
+msgstr "  åŠè§’ãƒ•ã‚©ãƒ³ãƒˆã®æ–‡å­—: "
 
 #.
 #. * Output character range of the wide font.
@@ -345,197 +345,197 @@ msgstr "  È¾³Ñ¥Õ¥©¥ó¥È¤ÎÊ¸»ú: "
 #: ../ebinfo/ebinfo.c:473
 #, c-format
 msgid "  wide font characters: "
-msgstr "  Á´³Ñ¥Õ¥©¥ó¥È¤ÎÊ¸»ú: "
+msgstr "  å…¨è§’ãƒ•ã‚©ãƒ³ãƒˆã®æ–‡å­—: "
 
 #: ../ebinfo/ebinfo.c:556
 #, c-format
 msgid "  multi search %d:\n"
-msgstr "  Ê£¹ç¸¡º÷ %d:\n"
+msgstr "  è¤‡åˆæ¤œç´¢ %d:\n"
 
 #: ../ebinfo/ebinfo.c:570
 #, c-format
 msgid "    title: "
-msgstr "    ÂêÌ¾: "
+msgstr "    é¡Œå: "
 
 #: ../ebinfo/ebinfo.c:583
 #, c-format
 msgid "    label %d: "
-msgstr "    ¥é¥Ù¥ë %d: "
+msgstr "    ãƒ©ãƒ™ãƒ« %d: "
 
 #: ../ebinfo/ebinfo.c:587
 msgid "      candidates: "
-msgstr "      ¸õÊä: "
+msgstr "      å€™è£œ: "
 
 #: ../ebinfo/ebinfo.c:589
 msgid "exist\n"
-msgstr "Í­\n"
+msgstr "æœ‰\n"
 
 #: ../ebinfo/ebinfo.c:591
 msgid "not-exist\n"
-msgstr "Ìµ\n"
+msgstr "ç„¡\n"
 
 #: ../ebinfo/ebinfo.c:611
 #, c-format
 msgid ""
 "  -l  --book-list            output a list of books on an EBENT server\n"
-msgstr "  -l  --book-list            EBNET ¥µ¡¼¥Ğ¾å¤Î½ñÀÒ¥ê¥¹¥È¤ò½ĞÎÏ\n"
+msgstr "  -l  --book-list            EBNET ã‚µãƒ¼ãƒä¸Šã®æ›¸ç±ãƒªã‚¹ãƒˆã‚’å‡ºåŠ›\n"
 
 #: ../ebinfo/ebinfo.c:612
 #, c-format
 msgid "  -m  --multi-search         also output multi-search information\n"
-msgstr "  -m  --multi-search         Ê£¹ç¸¡º÷¤Î¾ğÊó¤â½ĞÎÏ\n"
+msgstr "  -m  --multi-search         è¤‡åˆæ¤œç´¢ã®æƒ…å ±ã‚‚å‡ºåŠ›\n"
 
 #: ../ebrefile/ebrefile.c:283
 #, c-format
 msgid "%s: too long book directory path\n"
-msgstr "%s: ½ñÀÒ¤Î¥Ç¥£¥ì¥¯¥È¥ê¤Î¥Ñ¥¹Ì¾¤¬Ä¹¤¹¤®¤Ş¤¹\n"
+msgstr "%s: æ›¸ç±ã®ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªã®ãƒ‘ã‚¹åãŒé•·ã™ãã¾ã™\n"
 
 #: ../ebrefile/ebrefile.c:332 ../ebzip/ebzip.c:537
 #, c-format
 msgid "                             ouput files under DIRECTORY\n"
-msgstr "                             ¥Õ¥¡¥¤¥ë¤ò¡Ö¥Ç¥£¥ì¥¯¥È¥ê¡×¤Ë½ĞÎÏ¤¹¤ë\n"
+msgstr "                             ãƒ•ã‚¡ã‚¤ãƒ«ã‚’ã€Œãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªã€ã«å‡ºåŠ›ã™ã‚‹\n"
 
 #: ../ebrefile/ebrefile.c:377
 #, c-format
 msgid "%s: no catalog file: %s\n"
-msgstr "%s: ¥«¥¿¥í¥°¥Õ¥¡¥¤¥ë¤¬¸«¤Ä¤«¤ê¤Ş¤»¤ó: %s\n"
+msgstr "%s: ã‚«ã‚¿ãƒ­ã‚°ãƒ•ã‚¡ã‚¤ãƒ«ãŒè¦‹ã¤ã‹ã‚Šã¾ã›ã‚“: %s\n"
 
 #: ../ebrefile/ebrefile.c:416
 #, c-format
 msgid "%s: failed to move the file, %s: %s -> %s\n"
-msgstr "%s: ¥Õ¥¡¥¤¥ë¤ò°ÜÆ°¤Ç¤­¤Ş¤»¤ó¤Ç¤·¤¿, %s: %s -> %s\n"
+msgstr "%s: ãƒ•ã‚¡ã‚¤ãƒ«ã‚’ç§»å‹•ã§ãã¾ã›ã‚“ã§ã—ãŸ, %s: %s -> %s\n"
 
 #: ../ebrefile/ebrefile.c:486 ../ebrefile/ebrefile.c:507
 #: ../ebrefile/ebrefile.c:555 ../ebrefile/ebrefile.c:595 ../ebzip/sebxa.c:90
 #: ../ebzip/sebxa.c:232
 #, c-format
 msgid "%s: failed to read the file, %s: %s\n"
-msgstr "%s: ¥Õ¥¡¥¤¥ë¤òÆÉ¤ß¹ş¤á¤Ş¤»¤ó¤Ç¤·¤¿, %s: %s\n"
+msgstr "%s: ãƒ•ã‚¡ã‚¤ãƒ«ã‚’èª­ã¿è¾¼ã‚ã¾ã›ã‚“ã§ã—ãŸ, %s: %s\n"
 
 #: ../ebrefile/ebrefile.c:493 ../ebrefile/ebrefile.c:541
 #: ../ebrefile/ebrefile.c:562 ../ebrefile/ebrefile.c:600
 #: ../ebrefile/ebrefile.c:616 ../ebrefile/ebrefile.c:638 ../ebzip/sebxa.c:142
 #, c-format
 msgid "%s: failed to write the file, %s: %s\n"
-msgstr "%s: ¥Õ¥¡¥¤¥ë¤Ø½ñ¤­¹ş¤á¤Ş¤»¤ó¤Ç¤·¤¿, %s: %s\n"
+msgstr "%s: ãƒ•ã‚¡ã‚¤ãƒ«ã¸æ›¸ãè¾¼ã‚ã¾ã›ã‚“ã§ã—ãŸ, %s: %s\n"
 
 #: ../ebrefile/ebrefile.c:580
 #, c-format
 msgid "%s: warning: no such subbook: %s\n"
-msgstr "%s: ·Ù¹ğ: ¤½¤Î¤è¤¦¤ÊÉûËÜ¤Ï¤¢¤ê¤Ş¤»¤ó: %s\n"
+msgstr "%s: è­¦å‘Š: ãã®ã‚ˆã†ãªå‰¯æœ¬ã¯ã‚ã‚Šã¾ã›ã‚“: %s\n"
 
 #: ../ebrefile/ebrefile.c:633 ../ebzip/sebxa.c:78 ../ebzip/sebxa.c:130
 #: ../ebzip/sebxa.c:220 ../ebzip/zipfile.c:365 ../ebzip/zipfile.c:423
 #: ../ebzip/zipfile.c:497
 #, c-format
 msgid "%s: failed to seek the file, %s: %s\n"
-msgstr "%s: ¥Õ¥¡¥¤¥ë¤ò¥·¡¼¥¯¤Ç¤­¤Ş¤»¤ó¤Ç¤·¤¿, %s: %s\n"
+msgstr "%s: ãƒ•ã‚¡ã‚¤ãƒ«ã‚’ã‚·ãƒ¼ã‚¯ã§ãã¾ã›ã‚“ã§ã—ãŸ, %s: %s\n"
 
 #: ../ebrefile/ebrefile.c:682 ../ebzip/copyfile.c:74 ../ebzip/unzipfile.c:130
 #: ../ebzip/zipfile.c:113
 #, c-format
 msgid "%s: no such file: %s\n"
-msgstr "%s: ¤½¤Î¤è¤¦¤Ê¥Õ¥¡¥¤¥ë¤Ï¤¢¤ê¤Ş¤»¤ó: %s\n"
+msgstr "%s: ãã®ã‚ˆã†ãªãƒ•ã‚¡ã‚¤ãƒ«ã¯ã‚ã‚Šã¾ã›ã‚“: %s\n"
 
 #: ../ebrefile/ebrefile.c:723 ../ebzip/copyfile.c:191
 #, c-format
 msgid "%s: failed to read from the file, %s: %s\n"
-msgstr "%s: ¥Õ¥¡¥¤¥ë¤òÆÉ¤ß¹ş¤á¤Ş¤»¤ó¤Ç¤·¤¿, %s: %s\n"
+msgstr "%s: ãƒ•ã‚¡ã‚¤ãƒ«ã‚’èª­ã¿è¾¼ã‚ã¾ã›ã‚“ã§ã—ãŸ, %s: %s\n"
 
 #: ../ebstopcode/ebstopcode.c:252
 #, c-format
 msgid "%s: too few argument\n"
-msgstr "%s: °ú¿ô¤¬¾¯¤Ê¤¹¤®¤Ş¤¹\n"
+msgstr "%s: å¼•æ•°ãŒå°‘ãªã™ãã¾ã™\n"
 
 #: ../ebstopcode/ebstopcode.c:341
 #, c-format
 msgid "%s: invalid stop code `%s'\n"
-msgstr "%s: `%s' ¤È¤¤¤¦¶èÀÚ¤ê¥³¡¼¥É¤Î»ØÄê¤ÏÉÔÀµ¤Ç¤¹\n"
+msgstr "%s: `%s' ã¨ã„ã†åŒºåˆ‡ã‚Šã‚³ãƒ¼ãƒ‰ã®æŒ‡å®šã¯ä¸æ­£ã§ã™\n"
 
 #: ../ebstopcode/ebstopcode.c:376
 #, c-format
 msgid "%s: invalid text length `%s'\n"
-msgstr "%s: `%s' ¤È¤¤¤¦Ä¹¤µ¤Î»ØÄê¤ÏÉÔÀµ¤Ç¤¹\n"
+msgstr "%s: `%s' ã¨ã„ã†é•·ã•ã®æŒ‡å®šã¯ä¸æ­£ã§ã™\n"
 
 #: ../ebstopcode/ebstopcode.c:433
 #, c-format
 msgid "%s: invalid text position `%s'\n"
-msgstr "%s: `%s' ¤È¤¤¤¦ËÜÊ¸¤Î°ÌÃÖ»ØÄê¤ÏÉÔÀµ¤Ç¤¹\n"
+msgstr "%s: `%s' ã¨ã„ã†æœ¬æ–‡ã®ä½ç½®æŒ‡å®šã¯ä¸æ­£ã§ã™\n"
 
 #: ../ebstopcode/ebstopcode.c:445
 #, c-format
 msgid "Usage: %s [option...] [book-directory] subbook\n"
-msgstr "»ÈÍÑË¡: %s [¥ª¥×¥·¥ç¥ó...] [½ñÀÒ¤Î¥Ç¥£¥ì¥¯¥È¥ê] ÉûËÜ\n"
+msgstr "ä½¿ç”¨æ³•: %s [ã‚ªãƒ—ã‚·ãƒ§ãƒ³...] [æ›¸ç±ã®ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒª] å‰¯æœ¬\n"
 
 #: ../ebstopcode/ebstopcode.c:448
 #, c-format
 msgid "  -c CODE, --code CODE\n"
-msgstr "  -c ¥³¡¼¥É, --code ¥³¡¼¥É\n"
+msgstr "  -c ã‚³ãƒ¼ãƒ‰, --code ã‚³ãƒ¼ãƒ‰\n"
 
 #: ../ebstopcode/ebstopcode.c:449
 #, c-format
 msgid "                             set stop code manually\n"
-msgstr "                             ¶èÀÚ¤ê¥³¡¼¥É¤ò»ØÄê¤¹¤ë\n"
+msgstr "                             åŒºåˆ‡ã‚Šã‚³ãƒ¼ãƒ‰ã‚’æŒ‡å®šã™ã‚‹\n"
 
 #: ../ebstopcode/ebstopcode.c:451
 #, c-format
 msgid "  -l LENGTH, --text-length LENGTH\n"
-msgstr "  -l Ä¹¤µ, --text-length Ä¹¤µ\n"
+msgstr "  -l é•·ã•, --text-length é•·ã•\n"
 
 #: ../ebstopcode/ebstopcode.c:452
 #, c-format
 msgid "                             maximum length of output text\n"
-msgstr "                             ½ĞÎÏ¤¹¤ëËÜÊ¸¤ÎºÇÂçÄ¹\n"
+msgstr "                             å‡ºåŠ›ã™ã‚‹æœ¬æ–‡ã®æœ€å¤§é•·\n"
 
 #: ../ebstopcode/ebstopcode.c:453 ../ebzip/ebzip.c:532
 #, c-format
 msgid "                             (default: %d)\n"
-msgstr "                             (¾ÊÎ¬»ş: %d)\n"
+msgstr "                             (çœç•¥æ™‚: %d)\n"
 
 #: ../ebstopcode/ebstopcode.c:455
 #, c-format
 msgid "  -n  --no-candidates        suppress stop code candidates\n"
-msgstr "  -n  --no-candidates        ¶èÀÚ¤ê¥³¡¼¥É¤Î¸õÊä¤ò½ĞÎÏ¤·¤Ê¤¤\n"
+msgstr "  -n  --no-candidates        åŒºåˆ‡ã‚Šã‚³ãƒ¼ãƒ‰ã®å€™è£œã‚’å‡ºåŠ›ã—ãªã„\n"
 
 #: ../ebstopcode/ebstopcode.c:456
 #, c-format
 msgid "  -p PAGE:OFFSET, --text-position PAGE:OFFSET\n"
-msgstr "  -p ¥Ú¡¼¥¸:¥ª¥Õ¥»¥Ã¥È, --text-position ¥Ú¡¼¥¸:¥ª¥Õ¥»¥Ã¥È\n"
+msgstr "  -p ãƒšãƒ¼ã‚¸:ã‚ªãƒ•ã‚»ãƒƒãƒˆ, --text-position ãƒšãƒ¼ã‚¸:ã‚ªãƒ•ã‚»ãƒƒãƒˆ\n"
 
 #: ../ebstopcode/ebstopcode.c:457
 #, c-format
 msgid "                             start position of text\n"
-msgstr "                             ËÜÊ¸¤Î³«»Ï°ÌÃÖ\n"
+msgstr "                             æœ¬æ–‡ã®é–‹å§‹ä½ç½®\n"
 
 #: ../ebstopcode/ebstopcode.c:499
 #, c-format
 msgid "%s: failed to bind the book, %s: %s\n"
-msgstr "%s: ½ñÀÒ¤ÏÍøÍÑ¤Ç¤­¤Ş¤»¤ó, %s: %s\n"
+msgstr "%s: æ›¸ç±ã¯åˆ©ç”¨ã§ãã¾ã›ã‚“, %s: %s\n"
 
 #: ../ebstopcode/ebstopcode.c:518
 #, c-format
 msgid "%s: failed to set the current subbook, %s\n"
-msgstr "%s: ÉûËÜ¤òÁªÂò¤Ç¤­¤Ş¤»¤ó¤Ç¤·¤¿, %s: %s\n"
+msgstr "%s: å‰¯æœ¬ã‚’é¸æŠã§ãã¾ã›ã‚“ã§ã—ãŸ, %s: %s\n"
 
 #: ../ebstopcode/ebstopcode.c:553
 #, c-format
 msgid "%s: failed to get text information, %s\n"
-msgstr "%s: ËÜÊ¸¤Ë´Ø¤¹¤ë¾ğÊó¤ò¼èÆÀ¤Ç¤­¤Ş¤»¤ó¤Ç¤·¤¿, %s: %s\n"
+msgstr "%s: æœ¬æ–‡ã«é–¢ã™ã‚‹æƒ…å ±ã‚’å–å¾—ã§ãã¾ã›ã‚“ã§ã—ãŸ, %s: %s\n"
 
 #: ../ebstopcode/ebstopcode.c:583
 #, c-format
 msgid "%s: failed to read text, %s\n"
-msgstr "%s: ËÜÊ¸¤òÆÉ¤ß¹ş¤á¤Ş¤»¤ó¤Ç¤·¤¿, %s: %s\n"
+msgstr "%s: æœ¬æ–‡ã‚’èª­ã¿è¾¼ã‚ã¾ã›ã‚“ã§ã—ãŸ, %s: %s\n"
 
 #: ../ebzip/copyfile.c:65
 #, c-format
 msgid "==> copy %s <==\n"
-msgstr "==> %s ¤ò¥³¥Ô¡¼ <==\n"
+msgstr "==> %s ã‚’ã‚³ãƒ”ãƒ¼ <==\n"
 
 #: ../ebzip/copyfile.c:66 ../ebzip/unzipfile.c:122 ../ebzip/zipfile.c:105
 #, c-format
 msgid "output to %s\n"
-msgstr "%s ¤Ë½ĞÎÏ\n"
+msgstr "%s ã«å‡ºåŠ›\n"
 
 #: ../ebzip/copyfile.c:85 ../ebzip/unzipfile.c:141 ../ebzip/zipfile.c:124
 #, c-format
@@ -543,32 +543,32 @@ msgid ""
 "the input and output files are the same, skipped.\n"
 "\n"
 msgstr ""
-"ÆşÎÏ¤È½ĞÎÏ¥Õ¥¡¥¤¥ë¤¬Æ±°ì¤Ê¤Î¤Ç¡¢½èÍı¤·¤Ş¤»¤ó\n"
+"å…¥åŠ›ã¨å‡ºåŠ›ãƒ•ã‚¡ã‚¤ãƒ«ãŒåŒä¸€ãªã®ã§ã€å‡¦ç†ã—ã¾ã›ã‚“\n"
 "\n"
 
 #: ../ebzip/copyfile.c:96 ../ebzip/copyfile.c:244 ../ebzip/sebxa.c:152
 #: ../ebzip/unzipfile.c:318 ../ebzip/zipfile.c:516
 #, c-format
 msgid "completed (%llu / %llu bytes)\n"
-msgstr "´°Î» (%llu / %llu ¥Ğ¥¤¥È)\n"
+msgstr "å®Œäº† (%llu / %llu ãƒã‚¤ãƒˆ)\n"
 
 #: ../ebzip/copyfile.c:100 ../ebzip/copyfile.c:248 ../ebzip/sebxa.c:156
 #: ../ebzip/unzipfile.c:322 ../ebzip/zipfile.c:530
 msgid "completed (%I64u / %I64u bytes)\n"
-msgstr "´°Î» (%I64u / %I64u ¥Ğ¥¤¥È)\n"
+msgstr "å®Œäº† (%I64u / %I64u ãƒã‚¤ãƒˆ)\n"
 
 #: ../ebzip/copyfile.c:104 ../ebzip/copyfile.c:252 ../ebzip/sebxa.c:160
 #: ../ebzip/zipfile.c:544
 #, c-format
 msgid "completed (%lu / %lu bytes)\n"
-msgstr "´°Î» (%lu / %lu ¥Ğ¥¤¥È)\n"
+msgstr "å®Œäº† (%lu / %lu ãƒã‚¤ãƒˆ)\n"
 
 #: ../ebzip/copyfile.c:120 ../ebzip/unzipfile.c:164 ../ebzip/zipfile.c:154
 msgid ""
 "already exists, skip the file\n"
 "\n"
 msgstr ""
-"¤³¤Î¥Õ¥¡¥¤¥ë¤Ï¤¹¤Ç¤ËÂ¸ºß¤¹¤ë¤Î¤Ç¡¢½èÍı¤·¤Ş¤»¤ó\n"
+"ã“ã®ãƒ•ã‚¡ã‚¤ãƒ«ã¯ã™ã§ã«å­˜åœ¨ã™ã‚‹ã®ã§ã€å‡¦ç†ã—ã¾ã›ã‚“\n"
 "\n"
 
 #: ../ebzip/copyfile.c:128 ../ebzip/unzipfile.c:171 ../ebzip/zipfile.c:161
@@ -578,161 +578,161 @@ msgid ""
 "the file already exists: %s\n"
 msgstr ""
 "\n"
-"¥Õ¥¡¥¤¥ë¤¬¤¹¤Ç¤ËÂ¸ºß¤·¤Ş¤¹: %s\n"
+"ãƒ•ã‚¡ã‚¤ãƒ«ãŒã™ã§ã«å­˜åœ¨ã—ã¾ã™: %s\n"
 
 #: ../ebzip/copyfile.c:130 ../ebzip/unzipfile.c:173 ../ebzip/zipfile.c:163
 msgid "do you wish to overwrite (y or n)? "
-msgstr "¾å½ñ¤­¤·¤Ş¤¹¤« (¤Ï¤¤:y, ¤¤¤¤¤¨:n)? "
+msgstr "ä¸Šæ›¸ãã—ã¾ã™ã‹ (ã¯ã„:y, ã„ã„ãˆ:n)? "
 
 #: ../ebzip/copyfile.c:137 ../ebzip/unzipfile.c:180 ../ebzip/zipfile.c:170
 #, c-format
 msgid "%s: failed to unlink the file: %s\n"
-msgstr "%s: ¥Õ¥¡¥¤¥ë¤òºï½ü¤Ç¤­¤Ş¤»¤ó¤Ç¤·¤¿: %s\n"
+msgstr "%s: ãƒ•ã‚¡ã‚¤ãƒ«ã‚’å‰Šé™¤ã§ãã¾ã›ã‚“ã§ã—ãŸ: %s\n"
 
 #: ../ebzip/copyfile.c:195 ../ebzip/copyfile.c:200 ../ebzip/sebxa.c:94
 #: ../ebzip/sebxa.c:236 ../ebzip/unzipfile.c:261 ../ebzip/unzipfile.c:266
 #: ../ebzip/zipfile.c:315 ../ebzip/zipfile.c:320
 #, c-format
 msgid "%s: unexpected EOF: %s\n"
-msgstr "%s: Í½´ü¤»¤Ì EOF ¤òÆÉ¤ß¹ş¤ß¤Ş¤·¤¿: %s\n"
+msgstr "%s: äºˆæœŸã›ã¬ EOF ã‚’èª­ã¿è¾¼ã¿ã¾ã—ãŸ: %s\n"
 
 #: ../ebzip/copyfile.c:220 ../ebzip/unzipfile.c:294 ../ebzip/zipfile.c:443
 #, c-format
 msgid "%4.1f%% done (%llu / %llu bytes)\n"
-msgstr "%4.1f%% ½èÍıºÑ¤ß (%llu / %llu ¥Ğ¥¤¥È)\n"
+msgstr "%4.1f%% å‡¦ç†æ¸ˆã¿ (%llu / %llu ãƒã‚¤ãƒˆ)\n"
 
 #: ../ebzip/copyfile.c:225 ../ebzip/unzipfile.c:299 ../ebzip/zipfile.c:448
 msgid "%4.1f%% done (%I64u / %I64u bytes)\n"
-msgstr "%4.1f%% ½èÍıºÑ¤ß (%I64u / %I64u ¥Ğ¥¤¥È)\n"
+msgstr "%4.1f%% å‡¦ç†æ¸ˆã¿ (%I64u / %I64u ãƒã‚¤ãƒˆ)\n"
 
 #: ../ebzip/copyfile.c:230 ../ebzip/unzipfile.c:304 ../ebzip/zipfile.c:453
 #, c-format
 msgid "%4.1f%% done (%lu / %lu bytes)\n"
-msgstr "%4.1f%% ½èÍıºÑ¤ß (%lu / %lu ¥Ğ¥¤¥È)\n"
+msgstr "%4.1f%% å‡¦ç†æ¸ˆã¿ (%lu / %lu ãƒã‚¤ãƒˆ)\n"
 
 #: ../ebzip/copyfile.c:341 ../ebzip/unzipbook.c:172 ../ebzip/unzipbook.c:290
 #: ../ebzip/unzipbook.c:302 ../ebzip/unzipbook.c:379 ../ebzip/zipbook.c:174
 #: ../ebzip/zipbook.c:296 ../ebzip/zipbook.c:308 ../ebzip/zipbook.c:387
 #, c-format
 msgid "%s: failed to create a directory, %s: %s\n"
-msgstr "%s: ¥Ç¥£¥ì¥¯¥È¥ê¤òºîÀ®¤Ç¤­¤Ş¤»¤ó¤Ç¤·¤¿, %s: %s\n"
+msgstr "%s: ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªã‚’ä½œæˆã§ãã¾ã›ã‚“ã§ã—ãŸ, %s: %s\n"
 
 #: ../ebzip/copyfile.c:351
 #, c-format
 msgid "%s: failed to open the directory, %s: %s\n"
-msgstr "%s: ¥Ç¥£¥ì¥¯¥È¥ê¤ò³«¤±¤Ş¤»¤ó¤Ç¤·¤¿, %s: %s\n"
+msgstr "%s: ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªã‚’é–‹ã‘ã¾ã›ã‚“ã§ã—ãŸ, %s: %s\n"
 
 #: ../ebzip/ebzip.c:347
 #, c-format
 msgid "%s: invalid overwrite mode: %s\n"
-msgstr "%s: `%s' ¤È¤¤¤¦¾å½ñ¤­¥â¡¼¥É¤ÏÉÔÀµ¤Ç¤¹\n"
+msgstr "%s: `%s' ã¨ã„ã†ä¸Šæ›¸ããƒ¢ãƒ¼ãƒ‰ã¯ä¸æ­£ã§ã™\n"
 
 #: ../ebzip/ebzip.c:444
 #, c-format
 msgid "%s: invalid compression level `%s'\n"
-msgstr "%s: `%s' ¤ÏÉÔÀµ¤Ê°µ½Ì¥ì¥Ù¥ë¤Ç¤¹\n"
+msgstr "%s: `%s' ã¯ä¸æ­£ãªåœ§ç¸®ãƒ¬ãƒ™ãƒ«ã§ã™\n"
 
 #: ../ebzip/ebzip.c:486 ../ebzip/ebzip.c:505
 #, c-format
 msgid "%s: invalid content name `%s'\n"
-msgstr "%s: `%s' ¤È¤¤¤¦¥Ç¡¼¥¿·¿¤ÎÌ¾¾Î¤ÏÉÔÀµ¤Ç¤¹\n"
+msgstr "%s: `%s' ã¨ã„ã†ãƒ‡ãƒ¼ã‚¿å‹ã®åç§°ã¯ä¸æ­£ã§ã™\n"
 
 #: ../ebzip/ebzip.c:524
 #, c-format
 msgid "  -f  --force-overwrite      set overwrite mode to `force'\n"
-msgstr "  -f  --force-overwrite      ¾å½ñ¤­¥â¡¼¥É¤ò `force' ¤Ë¥»¥Ã¥È¤¹¤ë\n"
+msgstr "  -f  --force-overwrite      ä¸Šæ›¸ããƒ¢ãƒ¼ãƒ‰ã‚’ `force' ã«ã‚»ãƒƒãƒˆã™ã‚‹\n"
 
 #: ../ebzip/ebzip.c:525
 #, c-format
 msgid "                             (same as `--overwrite force')\n"
-msgstr "                             (`--overwrite force' ¤ÈÅù²Á)\n"
+msgstr "                             (`--overwrite force' ã¨ç­‰ä¾¡)\n"
 
 #: ../ebzip/ebzip.c:527
 #, c-format
 msgid "  -i  --information          list information of compressed files\n"
-msgstr "  -i  --information          °µ½Ì¤µ¤ì¤¿¥Õ¥¡¥¤¥ë¤Î¾ğÊó¤ò½ĞÎÏ\n"
+msgstr "  -i  --information          åœ§ç¸®ã•ã‚ŒãŸãƒ•ã‚¡ã‚¤ãƒ«ã®æƒ…å ±ã‚’å‡ºåŠ›\n"
 
 #: ../ebzip/ebzip.c:528
 #, c-format
 msgid "  -k  --keep                 don't delete original files\n"
-msgstr "  -k  --keep                 ¸µ¤Î¥Õ¥¡¥¤¥ë¤ò¾Ãµî¤·¤Ê¤¤\n"
+msgstr "  -k  --keep                 å…ƒã®ãƒ•ã‚¡ã‚¤ãƒ«ã‚’æ¶ˆå»ã—ãªã„\n"
 
 #: ../ebzip/ebzip.c:529
 #, c-format
 msgid "  -l INTEGER  --level INTEGER\n"
-msgstr "  -l À°¿ô  --level À°¿ô\n"
+msgstr "  -l æ•´æ•°  --level æ•´æ•°\n"
 
 #: ../ebzip/ebzip.c:530
 #, c-format
 msgid "                             compression level; 0..%d\n"
-msgstr "                             °µ½Ì¥ì¥Ù¥ë; 0..%d\n"
+msgstr "                             åœ§ç¸®ãƒ¬ãƒ™ãƒ«; 0..%d\n"
 
 #: ../ebzip/ebzip.c:534
 #, c-format
 msgid "  -n  --no-overwrite         set overwrite mode to `no'\n"
-msgstr "  -n  --no-overwrite         ¾å½ñ¤­¥â¡¼¥É¤ò `no' ¤Ë¥»¥Ã¥È¤¹¤ë\n"
+msgstr "  -n  --no-overwrite         ä¸Šæ›¸ããƒ¢ãƒ¼ãƒ‰ã‚’ `no' ã«ã‚»ãƒƒãƒˆã™ã‚‹\n"
 
 #: ../ebzip/ebzip.c:535
 #, c-format
 msgid "                             (same as `--overwrite no')\n"
-msgstr "                             (`--overwrite no' ¤ÈÅù²Á)\n"
+msgstr "                             (`--overwrite no' ã¨ç­‰ä¾¡)\n"
 
 #: ../ebzip/ebzip.c:540
 #, c-format
 msgid "  -q  --quiet  --silence     suppress all warnings\n"
-msgstr "  -q  --quiet  --silence     ·Ù¹ğ¤òÍŞÀ©¤¹¤ë\n"
+msgstr "  -q  --quiet  --silence     è­¦å‘Šã‚’æŠ‘åˆ¶ã™ã‚‹\n"
 
 #: ../ebzip/ebzip.c:541
 #, c-format
 msgid "  -s TYPE[,TYPE]  --skip-content TYPE[,TYPE...]\n"
-msgstr "  -s ·¿[,·¿...]  --skip-content ·¿[,·¿...]\n"
+msgstr "  -s å‹[,å‹...]  --skip-content å‹[,å‹...]\n"
 
 #: ../ebzip/ebzip.c:542
 #, c-format
 msgid ""
 "                             skip content; font, graphic, sound or movie\n"
 msgstr ""
-"                             ½ü³°¤¹¤ë¥Ç¡¼¥¿\n"
-"                             ·¿¤Ï font, graphic, sound, movie ¤Î¤¤¤º¤ì¤«\n"
+"                             é™¤å¤–ã™ã‚‹ãƒ‡ãƒ¼ã‚¿\n"
+"                             å‹ã¯ font, graphic, sound, movie ã®ã„ãšã‚Œã‹\n"
 
 #: ../ebzip/ebzip.c:543
 #, c-format
 msgid "                             (default: none is skipped)\n"
-msgstr "                             (¾ÊÎ¬»ş: ½ü³°¤Ê¤·)\n"
+msgstr "                             (çœç•¥æ™‚: é™¤å¤–ãªã—)\n"
 
 #: ../ebzip/ebzip.c:547
 #, c-format
 msgid "  -t  --test                 only check for input files\n"
-msgstr "  -t  --test                 ÆşÎÏ¥Õ¥¡¥¤¥ë¤Î¥Á¥§¥Ã¥¯¤À¤±¤ò¹Ô¤¦\n"
+msgstr "  -t  --test                 å…¥åŠ›ãƒ•ã‚¡ã‚¤ãƒ«ã®ãƒã‚§ãƒƒã‚¯ã ã‘ã‚’è¡Œã†\n"
 
 #: ../ebzip/ebzip.c:548
 #, c-format
 msgid "  -u  --uncompress           uncompress files\n"
-msgstr "  -u  --uncompress           ¥Õ¥¡¥¤¥ë¤ò¿­Ä¹\n"
+msgstr "  -u  --uncompress           ãƒ•ã‚¡ã‚¤ãƒ«ã‚’ä¼¸é•·\n"
 
 #: ../ebzip/ebzip.c:550
 #, c-format
 msgid "  -w MODE  --overwrite MODE  set overwrite mode of output files;\n"
 msgstr ""
-"  -w ¥â¡¼¥É  --overwrite ¥â¡¼¥É\n"
-"                             ½ĞÎÏ¥Õ¥¡¥¤¥ë¤Î¾å½ñ¤­¥â¡¼¥É¤ò»ØÄê¤¹¤ë¡£\n"
+"  -w ãƒ¢ãƒ¼ãƒ‰  --overwrite ãƒ¢ãƒ¼ãƒ‰\n"
+"                             å‡ºåŠ›ãƒ•ã‚¡ã‚¤ãƒ«ã®ä¸Šæ›¸ããƒ¢ãƒ¼ãƒ‰ã‚’æŒ‡å®šã™ã‚‹ã€‚\n"
 
 #: ../ebzip/ebzip.c:551
 #, c-format
 msgid "                             confirm, force or no\n"
 msgstr ""
-"                             ¥â¡¼¥É¤Ï confirm (³ÎÇ§)¡¢force (¶¯À©¼Â¹Ô)¡¢\n"
-"                             no (¾å½ñ¤­¤·¤Ê¤¤) ¤Î¤¤¤º¤ì¤«\n"
+"                             ãƒ¢ãƒ¼ãƒ‰ã¯ confirm (ç¢ºèª)ã€force (å¼·åˆ¶å®Ÿè¡Œ)ã€\n"
+"                             no (ä¸Šæ›¸ãã—ãªã„) ã®ã„ãšã‚Œã‹\n"
 
 #: ../ebzip/ebzip.c:552
 #, c-format
 msgid "                             (default: confirm)\n"
-msgstr "                             (¾ÊÎ¬»ş: confirm)\n"
+msgstr "                             (çœç•¥æ™‚: confirm)\n"
 
 #: ../ebzip/ebzip.c:553
 #, c-format
 msgid "  -z  --compress             compress files\n"
-msgstr "  -z  --compress             ¥Õ¥¡¥¤¥ë¤ò°µ½Ì\n"
+msgstr "  -z  --compress             ãƒ•ã‚¡ã‚¤ãƒ«ã‚’åœ§ç¸®\n"
 
 #: ../ebzip/ebzip.c:559
 #, c-format
@@ -741,24 +741,24 @@ msgid ""
 "Default action:\n"
 msgstr ""
 "\n"
-"¾ÊÎ¬»ş¤ÎÆ°ºî:\n"
+"çœç•¥æ™‚ã®å‹•ä½œ:\n"
 
 #: ../ebzip/ebzip.c:561
 #, c-format
 msgid "  When invoked as `ebunzip', uncompression is the default action.\n"
-msgstr "  `ebunzip' ¤È¤·¤Æµ¯Æ°¤µ¤ì¤¿¤È¤­¤Ï¡¢¾ÊÎ¬»ş¤ÎÆ°ºî¤Ï¿­Ä¹¤Ë¤Ê¤ë¡£\n"
+msgstr "  `ebunzip' ã¨ã—ã¦èµ·å‹•ã•ã‚ŒãŸã¨ãã¯ã€çœç•¥æ™‚ã®å‹•ä½œã¯ä¼¸é•·ã«ãªã‚‹ã€‚\n"
 
 #: ../ebzip/ebzip.c:562
 #, c-format
 msgid ""
 "  When invoked as `ebzipinfo', listing information is the default action.\n"
 msgstr ""
-"  `ebunzipinfo' ¤È¤·¤Æµ¯Æ°¤µ¤ì¤¿¤È¤­¤Ï¡¢¾ÊÎ¬»ş¤ÎÆ°ºî¤Ï¾ğÊó¤Î½ĞÎÏ¤Ë¤Ê¤ë¡£\n"
+"  `ebunzipinfo' ã¨ã—ã¦èµ·å‹•ã•ã‚ŒãŸã¨ãã¯ã€çœç•¥æ™‚ã®å‹•ä½œã¯æƒ…å ±ã®å‡ºåŠ›ã«ãªã‚‹ã€‚\n"
 
 #: ../ebzip/ebzip.c:564
 #, c-format
 msgid "  When invoked as `ebunzip.exe', uncompression is the default action.\n"
-msgstr "  `ebunzip.exe' ¤È¤·¤Æµ¯Æ°¤µ¤ì¤¿¤È¤­¤Ï¡¢¾ÊÎ¬»ş¤ÎÆ°ºî¤Ï¿­Ä¹¤Ë¤Ê¤ë¡£\n"
+msgstr "  `ebunzip.exe' ã¨ã—ã¦èµ·å‹•ã•ã‚ŒãŸã¨ãã¯ã€çœç•¥æ™‚ã®å‹•ä½œã¯ä¼¸é•·ã«ãªã‚‹ã€‚\n"
 
 #: ../ebzip/ebzip.c:565
 #, c-format
@@ -766,29 +766,29 @@ msgid ""
 "  When invoked as `ebzipinf.exe', listing information is the default "
 "action.\n"
 msgstr ""
-"  `ebunzipinf.exe' ¤È¤·¤Æµ¯Æ°¤µ¤ì¤¿¤È¤­¤Ï¡¢¾ÊÎ¬»ş¤ÎÆ°ºî¤Ï¾ğÊó¤Î½ĞÎÏ¤Ë¤Ê¤ë¡£\n"
+"  `ebunzipinf.exe' ã¨ã—ã¦èµ·å‹•ã•ã‚ŒãŸã¨ãã¯ã€çœç•¥æ™‚ã®å‹•ä½œã¯æƒ…å ±ã®å‡ºåŠ›ã«ãªã‚‹ã€‚\n"
 
 #: ../ebzip/ebzip.c:567
 #, c-format
 msgid "  Otherwise, compression is the default action.\n"
-msgstr "  ¤½¤ì°Ê³°¤Î¤È¤­¤Ï¡¢°µ½Ì¤¬¾ÊÎ¬»ş¤ÎÆ°ºî¤Ë¤Ê¤ë¡£\n"
+msgstr "  ãã‚Œä»¥å¤–ã®ã¨ãã¯ã€åœ§ç¸®ãŒçœç•¥æ™‚ã®å‹•ä½œã«ãªã‚‹ã€‚\n"
 
 #: ../ebzip/sebxa.c:60
 #, c-format
 msgid "==> rewrite %s <==\n"
-msgstr "==> %s ¤ò½ñ¤­´¹¤¨ <==\n"
+msgstr "==> %s ã‚’æ›¸ãæ›ãˆ <==\n"
 
 #: ../ebzip/speedup.c:79 ../ebzip/unzipfile.c:190 ../ebzip/unzipfile.c:228
 #: ../ebzip/zipfile.c:180 ../ebzip/zipinfofile.c:104
 #, c-format
 msgid "%s: failed to open the file: %s\n"
-msgstr "%s: ¥Õ¥¡¥¤¥ë¤ò³«¤±¤Ş¤»¤ó¤Ç¤·¤¿: %s\n"
+msgstr "%s: ãƒ•ã‚¡ã‚¤ãƒ«ã‚’é–‹ã‘ã¾ã›ã‚“ã§ã—ãŸ: %s\n"
 
 #: ../ebzip/speedup.c:85 ../ebzip/speedup.c:90 ../ebzip/speedup.c:119
 #: ../ebzip/speedup.c:124
 #, c-format
 msgid "%s: failed to read the file: %s\n"
-msgstr "%s: ¥Õ¥¡¥¤¥ë¤òÆÉ¤ß¹ş¤á¤Ş¤»¤ó¤Ç¤·¤¿: %s\n"
+msgstr "%s: ãƒ•ã‚¡ã‚¤ãƒ«ã‚’èª­ã¿è¾¼ã‚ã¾ã›ã‚“ã§ã—ãŸ: %s\n"
 
 #: ../ebzip/unlinkfile.c:39
 #, c-format
@@ -798,28 +798,28 @@ msgstr ""
 #: ../ebzip/unlinkfile.c:56
 #, c-format
 msgid "%s: warning: failed to unlink the file: %s\n"
-msgstr "%s: ·Ù¹ğ: ¥Õ¥¡¥¤¥ë¤òºï½ü¤Ç¤­¤Ş¤»¤ó¤Ç¤·¤¿: %s\n"
+msgstr "%s: è­¦å‘Š: ãƒ•ã‚¡ã‚¤ãƒ«ã‚’å‰Šé™¤ã§ãã¾ã›ã‚“ã§ã—ãŸ: %s\n"
 
 #: ../ebzip/unzipfile.c:121
 #, c-format
 msgid "==> uncompress %s <==\n"
-msgstr "==> %s ¤ò¿­Ä¹ <==\n"
+msgstr "==> %s ã‚’ä¼¸é•· <==\n"
 
 #: ../ebzip/unzipfile.c:152 ../ebzip/zipfile.c:135 ../ebzip/zipfile.c:142
 #: ../ebzip/zipfile.c:349
 #, c-format
 msgid "%s: memory exhausted\n"
-msgstr "%s: ¥á¥â¥ê¤ò»È¤¤²Ì¤¿¤·¤Ş¤·¤¿\n"
+msgstr "%s: ãƒ¡ãƒ¢ãƒªã‚’ä½¿ã„æœãŸã—ã¾ã—ãŸ\n"
 
 #: ../ebzip/unzipfile.c:251 ../ebzip/zipfile.c:305
 #, c-format
 msgid "%s: failed to seek the file: %s\n"
-msgstr "%s: ¥Õ¥¡¥¤¥ë¤ò¥·¡¼¥¯¤Ç¤­¤Ş¤»¤ó¤Ç¤·¤¿: %s\n"
+msgstr "%s: ãƒ•ã‚¡ã‚¤ãƒ«ã‚’ã‚·ãƒ¼ã‚¯ã§ãã¾ã›ã‚“ã§ã—ãŸ: %s\n"
 
 #: ../ebzip/unzipfile.c:257 ../ebzip/zipfile.c:311
 #, c-format
 msgid "%s: failed to read from the file: %s\n"
-msgstr "%s: ¥Õ¥¡¥¤¥ë¤òÆÉ¤ß¹ş¤á¤Ş¤»¤ó¤Ç¤·¤¿: %s\n"
+msgstr "%s: ãƒ•ã‚¡ã‚¤ãƒ«ã‚’èª­ã¿è¾¼ã‚ã¾ã›ã‚“ã§ã—ãŸ: %s\n"
 
 #: ../ebzip/unzipfile.c:326 ../ebzip/zipfile.c:553
 #, c-format
@@ -827,23 +827,23 @@ msgid ""
 "%lu -> %lu bytes\n"
 "\n"
 msgstr ""
-"%lu -> %lu ¥Ğ¥¤¥È\n"
+"%lu -> %lu ãƒã‚¤ãƒˆ\n"
 "\n"
 
 #: ../ebzip/unzipfile.c:360
 #, c-format
 msgid "%s: CRC error: %s\n"
-msgstr "%s: CRC ¥¨¥é¡¼: %s\n"
+msgstr "%s: CRC ã‚¨ãƒ©ãƒ¼: %s\n"
 
 #: ../ebzip/zipfile.c:104
 #, c-format
 msgid "==> compress %s <==\n"
-msgstr "==> %s ¤ò°µ½Ì <==\n"
+msgstr "==> %s ã‚’åœ§ç¸® <==\n"
 
 #: ../ebzip/zipfile.c:276 ../ebzip/zipfile.c:283 ../ebzip/zipfile.c:370
 #, c-format
 msgid "%s: failed to write to the file: %s\n"
-msgstr "%s: ¥Õ¥¡¥¤¥ë¤Ë½ñ¤­¹ş¤á¤Ş¤»¤ó¤Ç¤·¤¿: %s\n"
+msgstr "%s: ãƒ•ã‚¡ã‚¤ãƒ«ã«æ›¸ãè¾¼ã‚ã¾ã›ã‚“ã§ã—ãŸ: %s\n"
 
 #: ../ebzip/zipfile.c:520
 #, c-format
@@ -851,7 +851,7 @@ msgid ""
 "%llu -> %llu bytes (%4.1f%%)\n"
 "\n"
 msgstr ""
-"%llu -> %llu ¥Ğ¥¤¥È (%4.1f%%)\n"
+"%llu -> %llu ãƒã‚¤ãƒˆ (%4.1f%%)\n"
 "\n"
 
 #: ../ebzip/zipfile.c:525
@@ -860,7 +860,7 @@ msgid ""
 "%llu -> %llu bytes\n"
 "\n"
 msgstr ""
-"%llu -> %llu ¥Ğ¥¤¥È\n"
+"%llu -> %llu ãƒã‚¤ãƒˆ\n"
 "\n"
 
 #: ../ebzip/zipfile.c:534
@@ -868,7 +868,7 @@ msgid ""
 "%I64u -> %I64u bytes (%4.1f%%)\n"
 "\n"
 msgstr ""
-"%I64u -> %I64u ¥Ğ¥¤¥È (%4.1f%%)\n"
+"%I64u -> %I64u ãƒã‚¤ãƒˆ (%4.1f%%)\n"
 "\n"
 
 #: ../ebzip/zipfile.c:539
@@ -876,7 +876,7 @@ msgid ""
 "%I64u -> %I64u bytes\n"
 "\n"
 msgstr ""
-"%I64u -> %I64u ¥Ğ¥¤¥È\n"
+"%I64u -> %I64u ãƒã‚¤ãƒˆ\n"
 "\n"
 
 #: ../ebzip/zipfile.c:548
@@ -885,52 +885,52 @@ msgid ""
 "%lu -> %lu bytes (%4.1f%%)\n"
 "\n"
 msgstr ""
-"%lu -> %lu ¥Ğ¥¤¥È (%4.1f%%)\n"
+"%lu -> %lu ãƒã‚¤ãƒˆ (%4.1f%%)\n"
 "\n"
 
 #: ../ebzip/zipinfofile.c:132
 #, c-format
 msgid "%llu bytes (not compressed)\n"
-msgstr "%llu ¥Ğ¥¤¥È (Èó°µ½Ì)\n"
+msgstr "%llu ãƒã‚¤ãƒˆ (éåœ§ç¸®)\n"
 
 #: ../ebzip/zipinfofile.c:135
 msgid "%I64u bytes (not compressed)\n"
-msgstr "%I64u ¥Ğ¥¤¥È (Èó°µ½Ì)\n"
+msgstr "%I64u ãƒã‚¤ãƒˆ (éåœ§ç¸®)\n"
 
 #: ../ebzip/zipinfofile.c:138
 #, c-format
 msgid "%lu bytes (not compressed)\n"
-msgstr "%lu ¥Ğ¥¤¥È (Èó°µ½Ì)\n"
+msgstr "%lu ãƒã‚¤ãƒˆ (éåœ§ç¸®)\n"
 
 #: ../ebzip/zipinfofile.c:143
 #, c-format
 msgid "%llu -> %llu bytes "
-msgstr "%llu -> %llu ¥Ğ¥¤¥È "
+msgstr "%llu -> %llu ãƒã‚¤ãƒˆ "
 
 #: ../ebzip/zipinfofile.c:147
 msgid "%I64u -> %I64u bytes "
-msgstr "%I64u -> %I64u ¥Ğ¥¤¥È "
+msgstr "%I64u -> %I64u ãƒã‚¤ãƒˆ "
 
 #: ../ebzip/zipinfofile.c:151
 #, c-format
 msgid "%lu -> %lu bytes "
-msgstr "%lu -> %lu ¥Ğ¥¤¥È "
+msgstr "%lu -> %lu ãƒã‚¤ãƒˆ "
 
 #: ../ebzip/zipinfofile.c:156
 msgid "(empty original file, "
-msgstr "(¤â¤È¤Î¥Õ¥¡¥¤¥ë¤Ï¶õ, "
+msgstr "(ã‚‚ã¨ã®ãƒ•ã‚¡ã‚¤ãƒ«ã¯ç©º, "
 
 #: ../ebzip/zipinfofile.c:162
 #, c-format
 msgid "ebzip level %d compression)\n"
-msgstr "ebzip °µ½Ì¥ì¥Ù¥ë %d)\n"
+msgstr "ebzip åœ§ç¸®ãƒ¬ãƒ™ãƒ« %d)\n"
 
 #: ../ebzip/zipinfofile.c:164
 #, c-format
 msgid "S-EBXA compression)\n"
-msgstr "S-EBXA °µ½Ì)\n"
+msgstr "S-EBXA åœ§ç¸®)\n"
 
 #: ../ebzip/zipinfofile.c:166
 #, c-format
 msgid "EPWING compression)\n"
-msgstr "EPWING °µ½Ì)\n"
+msgstr "EPWING åœ§ç¸®)\n"
