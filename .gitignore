@@ -1,0 +1,11 @@
+*.orig
+*~
+.*.sw?
+.DS_Store
+/*build*/
+/.cache/
+/.idea/
+/.vs/
+/.vscode/
+/out/
+CMakeSettings.json
