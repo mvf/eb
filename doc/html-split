@@ -157,16 +157,16 @@ while (<IN_FILE>) {
 for (my $page = 0; $page < @toc; $page++) {
     my $bar = '';
     if ($page > 0) {
-	$bar .= sprintf("[<a href=\"%s\">Á°¤Ø</a>] ",
+	$bar .= sprintf("[<a href=\"%s\">å‰ã¸</a>] ",
 			splitted_file_name($page - 1));
     }
 
     if ($page + 1 < @toc) {
-	$bar .= sprintf("[<a href=\"%s\">¼¡¤Ø</a>] ",
+	$bar .= sprintf("[<a href=\"%s\">æ¬¡ã¸</a>] ",
 			splitted_file_name($page + 1));
     }
 
-    $bar .= sprintf("[<a href=\"%s\#%s\">ÌÜ¼¡</a>] ",
+    $bar .= sprintf("[<a href=\"%s\#%s\">ç›®æ¬¡</a>] ",
 		    splitted_file_name($toc_page), $toc_tag);
 
     my $out_file = splitted_file_name($page);

@@ -1,7 +1,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
 <html lang="ja">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=euc-jp">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="ebutils.css">
 <link rev="made" href="mailto:m-kasahr@sra.co.jp">
 <title>ebstopcode コマンド</title>
@@ -139,10 +139,10 @@ A
 [名] 1: A 抗原を有する赤血球を持つ血液型
 
 === stop-code?: 0x1f09 0x0001 ===
-2: メートル基準の長さの単位。10億分の 1 メートル。
+2: メートル基準の長さの単位。10 億分の 1 メートル。
 
 === stop-code?: 0x1f09 0x0001 ===
-3: アンペア。電流の基本単位で、SI単位系の一つ。
+3: アンペア。電流の基本単位で、SI 単位系の一つ。
 
 === stop-code?: 0x1f09 0x0001 ===
 
@@ -170,8 +170,8 @@ A
 % ebstopcode --no-candidate --code "0x1f41 0x0100" /cdrom english
 A
 [名] 1: A 抗原を有する赤血球を持つ血液型。
-2: メートル基準の長さの単位。10億分の 1 メートル。
-3: アンペア。電流の基本単位で、SI単位系の一つ。
+2: メートル基準の長さの単位。10 億分の 1 メートル。
+3: アンペア。電流の基本単位で、SI 単位系の一つ。
 </pre>
 </blockquote>
 
@@ -215,8 +215,8 @@ A
 <dt><code>--text-position <var>ページ:オフセット</var></code></dt>
 <dd>
 本文データの出力をこの位置から開始します。
-<var>ページ</var> には 0 より大きい 16進整数を、<var>オフセット</var> には、
-0〜0x7FF の間の 16進整数をそれぞれ指定します。
+<var>ページ</var> には 0 より大きい 16 進整数を、<var>オフセット</var> には、
+0〜0x7FF の間の 16 進整数をそれぞれ指定します。
 このオプションを指定しなかったときは、本文データの先頭位置から出力します。
 
 <dt><code>-v</code></dt>

@@ -2,7 +2,7 @@
 <!-- #file "eb.html" -->
 <html lang="ja">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=euc-jp">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="eb.css">
 <link rev="made" href="mailto:m-kasahr@sra.co.jp">
 <title>EB ライブラリ</title>
@@ -31,7 +31,7 @@ Copyright (c) 2001-2006  Motoyuki Kasahara
 
 <p>
 EB ライブラリは CD-ROM 書籍にアクセスするための C のライブラリです。
-UNIX 系 OS および Windows (2000以降) のシステム上で動作させることが
+UNIX 系 OS および Windows (2000 以降) のシステム上で動作させることが
 できます。
 </p>
 
@@ -2942,7 +2942,7 @@ EB ライブラリは、こうした重複エントリの削除は行いませ�
 </ul>
 
 <p>
-さらに処理を簡単にするには、直前の 1個のエントリに対してだけ重複検査を
+さらに処理を簡単にするには、直前の 1 個のエントリに対してだけ重複検査を
 行うという方法もあります。
 これなら、50 個の一致エントリに対して、比較は 49 回で済みます。
 ただしこの方法は、書籍によってはまったく効果がありません。
@@ -3680,7 +3680,7 @@ printf("%s\n", text);   /* 出力してみる */
 
 <blockquote>
 <pre>
-     (16進数によるダンプ)            (可能な部分をかな漢字に変換)
+     (16 進数によるダンプ)            (可能な部分をかな漢字に変換)
 1f0900011f41010026321f611f042121   1f0900011f410100[Σ]1f611f04[　]
 212721211f053e704a734a541f0a1f04   [：][　]1f05[情][報][編]1f0a1f04
 214e1f0525372530255e1f04214f2121   [［]1f05[シ][グ][マ]1f04[］][　]
@@ -4220,9 +4220,9 @@ hook_end_ref(EB_Book *book, EB_Appendix *appendix, void *container,
 <blockquote>
 <pre>
 ○○堂出版社 新国語辞典 第 2 版 (EPWING 版)
-第 1 版 発行 1988年 2月
-第 2 版 発行 1999年 11月
-第 2 版 (EPWING 版) 発行 2000年 2月
+第 1 版 発行 1988 年 2 月
+第 2 版 発行 1999 年 11 月
+第 2 版 (EPWING 版) 発行 2000 年 2 月
 </pre>
 </blockquote>
 
@@ -7724,17 +7724,17 @@ HTML におけるクリッカブル・イメージ (clickable image) とほぼ�
 </ol>
 
 <p>
-これに対して参照先付きのカラー図版では、この2つのフックの間に、矩形領域
+これに対して参照先付きのカラー図版では、この 2 つのフックの間に、矩形領域
 情報に関するフックが挿入されます。
 </p>
 
 <ol>
 <li><code>EB_HOOK_BEGIN_COLOR_JPEG</code> (非インライン用 JPEG 開始)
-<li><code>EB_HOOK_BEGIN_CLICKABLE_AREA</code> (矩形領域1 開始)
-<li><code>EB_HOOK_END_CLICKABLE_AREA</code> (矩形領域1 終了)
-<li><code>EB_HOOK_BEGIN_CLICKABLE_AREA</code> (矩形領域2 開始)
-<li><code>EB_HOOK_END_CLICKABLE_AREA</code> (矩形領域2 終了)<br>
-    以下、矩形領域3、矩形領域4 ... と矩形領域の個数分だけ続く。
+<li><code>EB_HOOK_BEGIN_CLICKABLE_AREA</code> (矩形領域 1 開始)
+<li><code>EB_HOOK_END_CLICKABLE_AREA</code> (矩形領域 1 終了)
+<li><code>EB_HOOK_BEGIN_CLICKABLE_AREA</code> (矩形領域 2 開始)
+<li><code>EB_HOOK_END_CLICKABLE_AREA</code> (矩形領域 2 終了)<br>
+    以下、矩形領域 3、矩形領域 4 ... と矩形領域の個数分だけ続く。
 <li><code>EB_HOOK_END_COLOR_GRAPHIC</code> (非インライン用 JPEG 終了)
 </ol>
 
@@ -8615,7 +8615,7 @@ appendix のトップディレクトリとは、<code>catalog</code> あるい�
 </p>
 
 <p>
-オブジェクトがすでにappendix に結び付いていた場合、その appendix との
+オブジェクトがすでに appendix に結び付いていた場合、その appendix との
 結び付きを解いてから、<var>path</var> にある appendix に結び付けます。
 </p>
 

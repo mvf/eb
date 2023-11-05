@@ -1,7 +1,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
 <html lang="ja">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=euc-jp">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="ebutils.css">
 <link rev="made" href="mailto:m-kasahr@sra.co.jp">
 <title>ebzip コマンド</title>
@@ -698,7 +698,7 @@ S-EBXA および EPWING 規格においても圧縮形式を定義しており�
 <p>
 S-EBXA および EPWING 規格でも圧縮形式を定義しており、CD-ROM 書籍には
 これらの圧縮形式を実際に採用しているものがあります。
-しかし、S-EBXA や EPWINGの圧縮形式は、ebzip の圧縮形式とは異なります。
+しかし、S-EBXA や EPWING の圧縮形式は、ebzip の圧縮形式とは異なります。
 </p>
 
 <p>
@@ -1244,7 +1244,7 @@ DEFLATE 圧縮データ形式で圧縮します。
 <dt><code>zip モード (MSB 側の 4 ビット)</code></dt>
 <dd>
 圧縮モードを表します。
-元の (非圧縮時の) ファイルの大きさが 4294967295 バイト (= 4Gバイト)
+元の (非圧縮時の) ファイルの大きさが 4294967295 バイト (= 4G バイト)
 以内のときは 1 (2 進数で 0001)、それより大きいときは 2 (2 進数で 0002)
 をセットします。
 

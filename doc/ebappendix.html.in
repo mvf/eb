@@ -1,7 +1,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
 <html lang="ja">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=euc-jp">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="ebutils.css">
 <link rev="made" href="mailto:m-kasahr@sra.co.jp">
 <title>ebappendix コマンド</title>
@@ -394,7 +394,7 @@ stop-code          0x1f09 0x0001
 </pre>
 </blockquote>
 
-文字番号は、<samp>0x</samp> ないし <samp>0X</samp> に続けて 16進数 4 桁
+文字番号は、<samp>0x</samp> ないし <samp>0X</samp> に続けて 16 進数 4 桁
 で記します。
 ただし、1つ目の文字番号は、<samp>0x1f09</samp> か <samp>0x1f41</samp> で
 なければなりません。
@@ -430,7 +430,7 @@ stop-code          0x1f09 0x0001
 外字の定義範囲を記します。
 開始位置の文字番号を <code>range-start</code> で、終了位置の文字番号を
 <code>range-end</code> で指定します。
-文字番号は、<samp>0x</samp> ないし <samp>0X</samp> に続けて 16進数 4 桁で
+文字番号は、<samp>0x</samp> ないし <samp>0X</samp> に続けて 16 進数 4 桁で
 記します。
 以下は記述例です。
 
@@ -453,7 +453,7 @@ stop-code          0x1f09 0x0001
 
 <dt><code>0x<var>hhhh</var></code></dt>
 <dd>
-<var>hhhh</var> は、4 桁 の 16進数です。
+<var>hhhh</var> は、4 桁 の 16 進数です。
 文字番号 <code>0x</code><var>hhhh</var> の全角外字ないし半角外字に対して、
 代替文字列を定義します。
 
