@@ -43,6 +43,7 @@
 #endif /* not HAVE_CONFIG_H */
 
 #include <sys/types.h>
+#include <stddef.h>
 
 /*
  * Compare strings.

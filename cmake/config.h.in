@@ -1,0 +1,33 @@
+#ifndef EB_CONFIG_H_INCLUDED
+#define EB_CONFIG_H_INCLUDED
+
+#cmakedefine HAVE_ATOLL
+#cmakedefine HAVE_DIRECT_H
+#cmakedefine HAVE_GAI_STRERROR
+#cmakedefine HAVE_GETADDRINFO
+#cmakedefine HAVE_GETNAMEINFO
+#cmakedefine HAVE_ICONV_H
+#cmakedefine HAVE_ICONV_OPEN
+#cmakedefine HAVE_LANGINFO_H
+#cmakedefine HAVE_LIBCHARSET_H
+#cmakedefine HAVE_LOCALE_CHARSET
+#cmakedefine HAVE_LOCALE_H
+#cmakedefine HAVE_MBSTRING_H
+#cmakedefine HAVE_NET_IF_H
+#cmakedefine HAVE_NL_LANGINFO
+#cmakedefine HAVE_SETLOCALE
+#cmakedefine HAVE_STRCASECMP
+#cmakedefine HAVE_STRUCT_IN6_ADDR
+#cmakedefine HAVE_STRUCT_SOCKADDR_IN6
+#cmakedefine HAVE_STRUCT_SOCKADDR_STORAGE
+#cmakedefine HAVE__ATOI64
+#cmakedefine HAVE__GETDCWD
+
+#ifdef WIN32
+#define DOS_FILE_PATH
+#ifdef _MSC_VER
+#define mode_t int
+#endif
+#endif
+
+#endif /* EB_CONFIG_H_INCLUDED */

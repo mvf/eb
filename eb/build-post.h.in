@@ -29,7 +29,7 @@
 #ifndef EB_BUILD_POST_H
 #define EB_BUILD_POST_H
 
-#include "defs.h"
+#include "eb/defs.h"
 
 /*
  * Text domain name.

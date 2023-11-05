@@ -36,6 +36,11 @@ extern "C" {
 #include <sys/types.h>
 #include <time.h>
 
+#if defined(_MSC_VER) && !defined(ssize_t)
+#include <basetsd.h>
+#define ssize_t SSIZE_T
+#endif
+
 /*
  * Header size of the ebzip compression file.
  */

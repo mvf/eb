@@ -1,10 +1,6 @@
 LIBRARY eb
 
 EXPORTS
-	binary_read_line_buffer
-	bind_file_to_line_buffer
-	cache_length_in_line_buffer
-	discard_cache_in_line_buffer
 	eb_appendix_path
 	eb_appendix_subbook
 	eb_appendix_subbook_directory
@@ -87,6 +83,7 @@ EXPORTS
 	eb_have_endword_search
 	eb_have_exactword_search
 	eb_have_font
+	eb_have_image_menu
 	eb_have_keyword_search
 	eb_have_menu
 	eb_have_multi_search
@@ -234,55 +231,6 @@ EXPORTS
 	eb_write_text_byte1
 	eb_write_text_byte2
 	eb_write_text_string
-	ebnet_bind
-	ebnet_bind_appendix
-	ebnet_bind_booklist
-	ebnet_canonicalize_url
-	ebnet_close
-	ebnet_connect_socket
-	ebnet_disconnect_socket
-	ebnet_finalize
-	ebnet_finalize_appendix
-	ebnet_finalize_book
-	ebnet_find_file_name
-	ebnet_fix_directory_name
-	ebnet_get_book_name
-	ebnet_get_file_path
-	ebnet_get_file_size
-	ebnet_get_offset
-	ebnet_initialize
-	ebnet_initialize_multiplex
-	ebnet_lseek
-	ebnet_open
-	ebnet_read
-	ebnet_reconnect_socket
-	ebnet_set_book_name
-	ebnet_set_bye_hook
-	ebnet_set_file_path
-	ebnet_set_file_size
-	ebnet_set_hello_hook
-	ebnet_set_lost_sync
-	ebnet_set_offset
-	file_bound_to_line_buffer
-	finalize_line_buffer
-	initialize_line_buffer
-	read_line_buffer
-	set_line_buffer_timeout
-	skip_line_buffer
-	url_parts_finalize
-	url_parts_fragment
-	url_parts_host
-	url_parts_initialize
-	url_parts_params
-	url_parts_parse
-	url_parts_password
-	url_parts_path
-	url_parts_port
-	url_parts_print
-	url_parts_query
-	url_parts_scheme
-	url_parts_url
-	url_parts_user
 	zio_close
 	zio_file
 	zio_finalize
@@ -294,4 +242,3 @@ EXPORTS
 	zio_open
 	zio_read
 	zio_set_sebxa_mode
-	localedir

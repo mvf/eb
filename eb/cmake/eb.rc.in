@@ -25,16 +25,10 @@
  * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
  * SUCH DAMAGE.
  */
-#include <afxres.h>
 
-LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
-
-/*
- * version resoruce
- */
-VS_VERSION_INFO VERSIONINFO
-	FILEVERSION		@VERSION_RC@
-	PRODUCTVERSION	@VERSION_RC@
+1 VERSIONINFO
+	FILEVERSION @PROJECT_VERSION_MAJOR@,@PROJECT_VERSION_MINOR@,@PROJECT_VERSION_PATCH@,0
+	PRODUCTVERSION @PROJECT_VERSION_MAJOR@,@PROJECT_VERSION_MINOR@,@PROJECT_VERSION_PATCH@,0
 	FILEFLAGSMASK	0x3fL
 #ifdef _DEBUG
 	FILEFLAGS		0x1L
@@ -49,16 +43,16 @@ BEGIN
 	BEGIN
 		BLOCK "041104b0"
 		BEGIN
-			VALUE "Comments", "\0"
-			VALUE "CompanyName", " \0"
-			VALUE "FileDescription", "EB Library for Win32\0"
-			VALUE "FileVersion", "@VERSION@\0"
-			VALUE "InternalName", "eb\0"
-			VALUE "LegalCopyright", "Copyright (c) 1997-2004  Motoyuki Kasahara.\0"
-			VALUE "LegalTrademarks", "\0"
-			VALUE "OriginalFilename", "eb.dll\0"
-			VALUE "ProductName", "EB Library\0"
-			VALUE "ProductVersion", "@VERSION@\0"
+			VALUE "Comments", ""
+			VALUE "CompanyName", ""
+			VALUE "FileDescription", "EB Library"
+			VALUE "FileVersion", "@FILEVERSION@"
+			VALUE "InternalName", "@PROJECT_NAME@"
+			VALUE "LegalCopyright", "Copyright (c) 1997-2010  Motoyuki Kasahara."
+			VALUE "LegalTrademarks", ""
+			VALUE "OriginalFilename", "@PROJECT_NAME@@CMAKE_SHARED_LIBRARY_SUFFIX@"
+			VALUE "ProductName", "EB Library"
+			VALUE "ProductVersion", "@PROJECT_VERSION@"
 		END
 	END
 	BLOCK "VarFileInfo"

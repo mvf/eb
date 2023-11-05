@@ -88,10 +88,10 @@ int strncasecmp(const char *, const char *, size_t);
 #endif /* not MAXPATHLEN */
 #endif /* not PATH_MAX */
 
-#include "eb.h"
-#include "error.h"
-#include "font.h"
-#include "build-post.h"
+#include "eb/eb.h"
+#include "eb/error.h"
+#include "eb/font.h"
+#include "eb/build-post.h"
 
 #include "getopt.h"
 #include "getumask.h"

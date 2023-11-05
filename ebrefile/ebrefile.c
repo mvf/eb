@@ -89,9 +89,9 @@ int strncasecmp(const char *, const char *, size_t);
     (MoveFileEx((old), (new), MOVEFILE_REPLACE_EXISTING) ? 0 : -1)
 #endif
 
-#include "eb.h"
-#include "error.h"
-#include "build-post.h"
+#include "eb/eb.h"
+#include "eb/error.h"
+#include "eb/build-post.h"
 
 #include "ebutils.h"
 

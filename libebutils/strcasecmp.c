@@ -32,6 +32,11 @@
 
 #include <sys/types.h>
 
+#if defined(_MSC_VER) && !defined(size_t)
+#include <basetsd.h>
+#define size_t SIZE_T
+#endif
+
 /*
  * Compare strings.
  * Cases in the strings are insensitive.

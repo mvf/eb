@@ -44,7 +44,6 @@
 #include <unistd.h>
 #include <dirent.h>
 #include <fcntl.h>
-#include <sys/time.h>
 
 #ifdef HAVE_DIRECT_H
 #include <direct.h>
