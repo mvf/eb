@@ -113,7 +113,7 @@ eb_bind_booklist(EB_BookList *booklist, const char *path)
 #ifndef ENABLE_EBNET
     error_code = EB_ERR_EBNET_UNSUPPORTED;
     goto failed;
-#endif
+#else
     if (!is_ebnet_url(path)) {
 	error_code = EB_ERR_BAD_FILE_NAME;
 	goto failed;
@@ -131,6 +131,7 @@ eb_bind_booklist(EB_BookList *booklist, const char *path)
 	eb_error_string(EB_SUCCESS)));
     eb_unlock(&booklist->lock);
     return EB_SUCCESS;
+#endif /* ENABLE_EBNET */
 
     /*
      * An error occurs...
