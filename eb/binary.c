@@ -923,12 +923,7 @@ eb_set_binary_mpeg(EB_Book *book, const unsigned int *argv)
  * Read binary data.
  */
 EB_Error_Code
-eb_read_binary(book, binary_max_length, binary, binary_length)
-    EB_Book *book;
-    size_t binary_max_length;
-    char *binary;
-    ssize_t *binary_length;
-
+eb_read_binary(EB_Book *book, size_t binary_max_length, char *binary, ssize_t *binary_length)
 {
     EB_Error_Code error_code;
 
